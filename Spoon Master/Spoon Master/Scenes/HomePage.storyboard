@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="hPf-zA-Aih">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="K0E-bU-bYa" customClass="HomeViewController" customModule="Spoon_Master" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1SM-Sh-rSr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artboard 1" translatesAutoresizingMaskIntoConstraints="NO" id="ylp-BI-WR3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="NIi-Rv-k3a">
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="zen-VA-1S5"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UI8-PE-4Pz">
+                                <rect key="frame" x="0.0" y="132" width="414" height="764"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ylp-BI-WR3" firstAttribute="trailing" secondItem="bQz-3g-VGe" secondAttribute="trailing" id="6NJ-Tn-JT8"/>
+                            <constraint firstItem="NIi-Rv-k3a" firstAttribute="top" secondItem="bQz-3g-VGe" secondAttribute="top" id="BV1-RS-4vc"/>
+                            <constraint firstAttribute="bottom" secondItem="UI8-PE-4Pz" secondAttribute="bottom" id="JZc-yd-05B"/>
+                            <constraint firstItem="UI8-PE-4Pz" firstAttribute="top" secondItem="NIi-Rv-k3a" secondAttribute="bottom" id="POc-bb-vhW"/>
+                            <constraint firstItem="ylp-BI-WR3" firstAttribute="top" secondItem="1SM-Sh-rSr" secondAttribute="top" id="Pst-CI-ux2"/>
+                            <constraint firstItem="UI8-PE-4Pz" firstAttribute="trailing" secondItem="bQz-3g-VGe" secondAttribute="trailing" id="Uie-2z-PMC"/>
+                            <constraint firstAttribute="bottom" secondItem="ylp-BI-WR3" secondAttribute="bottom" id="dDf-Vh-xHC"/>
+                            <constraint firstItem="ylp-BI-WR3" firstAttribute="leading" secondItem="bQz-3g-VGe" secondAttribute="leading" id="e3o-Rj-Zdp"/>
+                            <constraint firstItem="NIi-Rv-k3a" firstAttribute="trailing" secondItem="bQz-3g-VGe" secondAttribute="trailing" id="fDo-Lz-7WD"/>
+                            <constraint firstItem="NIi-Rv-k3a" firstAttribute="leading" secondItem="bQz-3g-VGe" secondAttribute="leading" id="nxD-K5-S8N"/>
+                            <constraint firstItem="UI8-PE-4Pz" firstAttribute="leading" secondItem="bQz-3g-VGe" secondAttribute="leading" id="vkz-Ej-QDz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bQz-3g-VGe"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="AFd-E6-Av7">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="heart.fill" catalog="system" id="Z2W-mK-eTE"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gEU-0N-eTT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="936.23188405797111" y="40.848214285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8OC-Xl-zOH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NPk-Ub-T1D" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kLd-4x-Kmz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="K0E-bU-bYa" kind="relationship" relationship="rootViewController" id="5wd-hl-cln"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wac-aj-Nff" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26.086956521739133" y="40.848214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Artboard 1" width="1125" height="2436"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+    </resources>
+</document>
