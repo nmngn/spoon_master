@@ -12,19 +12,20 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        takeRandomRecipesData()
         navigationItem.hidesBackButton = true
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func takeRandomRecipesData() {
+        let url = URL(string: "https://api.spoonacular.com/recipes/random?apiKey=e790f127598a49e9b95d1cff09fa4439&number=10")
+        let session = URLSession(configuration: .default)
+        let task = session.dataTask(with: url!) { (data, response, error) in
+            if error != nil {
+                print("Take Random Recipes Data has fail \(error)")
+            } else {
+                print(data!)
+            }
+        }
+        task.resume()
     }
-    */
-
+    
 }
