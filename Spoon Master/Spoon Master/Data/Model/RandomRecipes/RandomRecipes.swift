@@ -7,20 +7,41 @@
 //
 
 import Foundation
+import ObjectMapper
 
-struct RandomRecipes : Codable {
+struct RandomRecipes {
     var recipes : [Recipes]
 }
-
-struct Recipes : Codable {
-    var extendedIngredients : [ExtendedIngredients]
-    var id : Int
-    var title : String
-    var readyInMinutes :Int
-    var sourceUrl : String
-    var image : String
-    var summary : String
-    var instructions : String
-    var analyzedInstructions : [AnalyzedInstructions]
-    var spoonacularSourceUrl : String
+    
+   
+struct Recipes : Mappable {
+    
+    init?(map: Map) {
+        mapping(map: map)
+    }
+    mutating func mapping(map: Map) {
+        id <- map["id"]
+        title <- map["title"]
+        readyInMinutes <- map["readyInMinutes"]
+        sourceUrl <- map["sourceUrl"]
+        image <- map["image"]
+        summary <- map["summary"]
+        instructions <- map["instructions"]
+        spoonacularSourceUrl <- map["spoonacularSourceUrl"]
+        extendedIngredients <- map["ExtendedIngredients"]
+        analyzedInstructions <- map["AnalyzedInstruction"]
+    }
+    
+    
+    var extendedIngredients : [ExtendedIngredients]?
+    var id : Int?
+    var title : String?
+    var readyInMinutes :Int?
+    var sourceUrl : String?
+    var image : String?
+    var summary : String?
+    var instructions : String?
+    var analyzedInstructions : [AnalyzedInstructions]?
+    var spoonacularSourceUrl : String?
 }
+

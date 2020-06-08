@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ObjectMapper
 
 class HomeViewController: UIViewController {
 
@@ -16,16 +17,23 @@ class HomeViewController: UIViewController {
         navigationItem.hidesBackButton = true
     }
     func takeRandomRecipesData() {
-        let url = URL(string: "https://api.spoonacular.com/recipes/random?apiKey=e790f127598a49e9b95d1cff09fa4439&number=10")
+        let url = URL(string: "https://api.spoonacular.com/recipes/random?apiKey=e790f127598a49e9b95d1cff09fa4439")
         let session = URLSession(configuration: .default)
         let task = session.dataTask(with: url!) { (data, response, error) in
             if error != nil {
-                print("Take Random Recipes Data has fail \(error)")
+                print("Take Random Recipes Data has fail \(String(describing: error))")
             } else {
-                print(data!)
+                if let safeData = data {
+                    self.parseJSON(safeData)
+                }
             }
         }
         task.resume()
+    }
+    
+    func parseJSON(_ randomRecipes : Data) {
+        let recipes = Recipes(JSONString: "\(randomRecipes)" )
+        let JSONString = recipes?.toJSONString(prettyPrint: true)
     }
     
 }
