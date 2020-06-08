@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,9 +26,9 @@
 		36004EE92488A5D8000D9E03 /* Tips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36004EE82488A5D8000D9E03 /* Tips.storyboard */; };
 		36E657A72489DA2200DD2FE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36E657A62489DA2200DD2FE4 /* Main.storyboard */; };
 		36E657A92489DC7E00DD2FE4 /* RandomRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E657A82489DC7E00DD2FE4 /* RandomRecipes.swift */; };
-		36E657AD2489E00700DD2FE4 /* ExtendedIngredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E657AC2489E00700DD2FE4 /* ExtendedIngredients.swift */; };
-		36E657AF2489E03700DD2FE4 /* AnalyzedInstructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E657AE2489E03700DD2FE4 /* AnalyzedInstructions.swift */; };
-		36E657B12489E59100DD2FE4 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E657B02489E59100DD2FE4 /* Ingredients.swift */; };
+		36E657AD2489E00700DD2FE4 /* ExtendedIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E657AC2489E00700DD2FE4 /* ExtendedIngredient.swift */; };
+		36E657AF2489E03700DD2FE4 /* AnalyzedInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E657AE2489E03700DD2FE4 /* AnalyzedInstruction.swift */; };
+		36E657B12489E59100DD2FE4 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E657B02489E59100DD2FE4 /* Ingredient.swift */; };
 		36E657B32489E5A000DD2FE4 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E657B22489E5A000DD2FE4 /* Equipment.swift */; };
 		36E657B72489EF9900DD2FE4 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E657B62489EF9900DD2FE4 /* Product.swift */; };
 		36E657B92489F93200DD2FE4 /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E657B82489F93200DD2FE4 /* ProductDetail.swift */; };
@@ -57,9 +57,9 @@
 		36004EE82488A5D8000D9E03 /* Tips.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tips.storyboard; sourceTree = "<group>"; };
 		36E657A62489DA2200DD2FE4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "Spoon Master/Application/Main.storyboard"; sourceTree = SOURCE_ROOT; };
 		36E657A82489DC7E00DD2FE4 /* RandomRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomRecipes.swift; sourceTree = "<group>"; };
-		36E657AC2489E00700DD2FE4 /* ExtendedIngredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedIngredients.swift; sourceTree = "<group>"; };
-		36E657AE2489E03700DD2FE4 /* AnalyzedInstructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzedInstructions.swift; sourceTree = "<group>"; };
-		36E657B02489E59100DD2FE4 /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
+		36E657AC2489E00700DD2FE4 /* ExtendedIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedIngredient.swift; sourceTree = "<group>"; };
+		36E657AE2489E03700DD2FE4 /* AnalyzedInstruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzedInstruction.swift; sourceTree = "<group>"; };
+		36E657B02489E59100DD2FE4 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		36E657B22489E5A000DD2FE4 /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
 		36E657B62489EF9900DD2FE4 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		36E657B82489F93200DD2FE4 /* ProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
@@ -187,9 +187,9 @@
 			isa = PBXGroup;
 			children = (
 				36E657A82489DC7E00DD2FE4 /* RandomRecipes.swift */,
-				36E657AC2489E00700DD2FE4 /* ExtendedIngredients.swift */,
-				36E657AE2489E03700DD2FE4 /* AnalyzedInstructions.swift */,
-				36E657B02489E59100DD2FE4 /* Ingredients.swift */,
+				36E657AC2489E00700DD2FE4 /* ExtendedIngredient.swift */,
+				36E657AE2489E03700DD2FE4 /* AnalyzedInstruction.swift */,
+				36E657B02489E59100DD2FE4 /* Ingredient.swift */,
 				36E657B22489E5A000DD2FE4 /* Equipment.swift */,
 			);
 			path = RandomRecipes;
@@ -351,8 +351,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36E657AF2489E03700DD2FE4 /* AnalyzedInstructions.swift in Sources */,
-				36E657B12489E59100DD2FE4 /* Ingredients.swift in Sources */,
+				36E657AF2489E03700DD2FE4 /* AnalyzedInstruction.swift in Sources */,
+				36E657B12489E59100DD2FE4 /* Ingredient.swift in Sources */,
 				36E657B92489F93200DD2FE4 /* ProductDetail.swift in Sources */,
 				36E657B72489EF9900DD2FE4 /* Product.swift in Sources */,
 				36004ED324889AEA000D9E03 /* HomeViewController.swift in Sources */,
@@ -360,7 +360,7 @@
 				36004EDB24889B17000D9E03 /* InstructionViewController.swift in Sources */,
 				36004E9D24889223000D9E03 /* AppDelegate.swift in Sources */,
 				36004ED724889AFB000D9E03 /* ProductViewController.swift in Sources */,
-				36E657AD2489E00700DD2FE4 /* ExtendedIngredients.swift in Sources */,
+				36E657AD2489E00700DD2FE4 /* ExtendedIngredient.swift in Sources */,
 				36004EDD24889B1D000D9E03 /* TipsViewController.swift in Sources */,
 				36004E9F24889223000D9E03 /* SceneDelegate.swift in Sources */,
 				36E657BF2489FCB300DD2FE4 /* Nutrition.swift in Sources */,

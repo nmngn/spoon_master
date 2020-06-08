@@ -19,7 +19,7 @@ class HomeViewController: UIViewController {
     func takeRandomRecipesData() {
         let url = URL(string: "https://api.spoonacular.com/recipes/random?apiKey=e790f127598a49e9b95d1cff09fa4439")
         let session = URLSession(configuration: .default)
-        let task = session.dataTask(with: url!) { (data, response, error) in
+        let task = session.dataTask(with: url!) { [unowned self] (data, response, error) in
             if error != nil {
                 print("Take Random Recipes Data has fail \(String(describing: error))")
             } else {
@@ -32,8 +32,12 @@ class HomeViewController: UIViewController {
     }
     
     func parseJSON(_ randomRecipes : Data) {
-        let recipes = Recipes(JSONString: "\(randomRecipes)" )
-        let JSONString = recipes?.toJSONString(prettyPrint: true)
+        guard let json = String(data: randomRecipes, encoding: .utf8),
+        let recipes = RandomRecipes(JSONString: json) else {
+            print("ERROR")
+            return
+        }
+        print(recipes)
     }
     
 }
