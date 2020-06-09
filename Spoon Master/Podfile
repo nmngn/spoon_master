@@ -7,5 +7,5 @@ target 'Spoon Master' do
 
   # Pods for Spoon Master
 pod 'SwiftLint'
-
+pod 'ObjectMapper', '~> 3.5'
 end
