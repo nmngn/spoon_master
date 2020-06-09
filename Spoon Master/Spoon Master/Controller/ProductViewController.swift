@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ProductViewController.swift
 //  Spoon Master
 //
 //  Created by Nam Ngây on 6/4/20.
@@ -8,13 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ProductViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-
+   
