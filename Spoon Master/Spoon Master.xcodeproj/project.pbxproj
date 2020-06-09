@@ -7,25 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35F5636BBA386C2F208EB246 /* Pods_Spoon_Master.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5DD643DC7C7CE1EDD9AD139 /* Pods_Spoon_Master.framework */; };
 		36004E9D24889223000D9E03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36004E9C24889223000D9E03 /* AppDelegate.swift */; };
 		36004E9F24889223000D9E03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36004E9E24889223000D9E03 /* SceneDelegate.swift */; };
-		36004EA124889223000D9E03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36004EA024889223000D9E03 /* ViewController.swift */; };
 		36004EA424889223000D9E03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36004EA224889223000D9E03 /* Main.storyboard */; };
 		36004EA724889223000D9E03 /* Spoon_Master.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36004EA524889223000D9E03 /* Spoon_Master.xcdatamodeld */; };
-		36004EA924889225000D9E03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36004EA824889225000D9E03 /* Assets.xcassets */; };
 		36004EAC24889225000D9E03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36004EAA24889225000D9E03 /* LaunchScreen.storyboard */; };
+		36004EBD248897EF000D9E03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36004EBC248897EF000D9E03 /* Assets.xcassets */; };
+		36004ED324889AEA000D9E03 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36004ED224889AEA000D9E03 /* HomeViewController.swift */; };
+		36004ED524889AF4000D9E03 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36004ED424889AF4000D9E03 /* FavoriteViewController.swift */; };
+		36004ED724889AFB000D9E03 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36004ED624889AFB000D9E03 /* ProductViewController.swift */; };
+		36004ED924889B0F000D9E03 /* IngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36004ED824889B0F000D9E03 /* IngredientViewController.swift */; };
+		36004EDB24889B17000D9E03 /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36004EDA24889B17000D9E03 /* InstructionViewController.swift */; };
+		36004EDD24889B1D000D9E03 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36004EDC24889B1D000D9E03 /* TipsViewController.swift */; };
+		36004EE12488A5B6000D9E03 /* Favorite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36004EE02488A5B6000D9E03 /* Favorite.storyboard */; };
+		36004EE32488A5C0000D9E03 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36004EE22488A5C0000D9E03 /* Product.storyboard */; };
+		36004EE52488A5C6000D9E03 /* Ingredient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36004EE42488A5C6000D9E03 /* Ingredient.storyboard */; };
+		36004EE72488A5D2000D9E03 /* Instruction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36004EE62488A5D2000D9E03 /* Instruction.storyboard */; };
+		36004EE92488A5D8000D9E03 /* Tips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36004EE82488A5D8000D9E03 /* Tips.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		36004E9924889223000D9E03 /* Spoon Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spoon Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36004E9C24889223000D9E03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36004E9E24889223000D9E03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		36004EA024889223000D9E03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		36004EA324889223000D9E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36004EA624889223000D9E03 /* Spoon_Master.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Spoon_Master.xcdatamodel; sourceTree = "<group>"; };
-		36004EA824889225000D9E03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36004EAB24889225000D9E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36004EAD24889225000D9E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36004EBC248897EF000D9E03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36004ED224889AEA000D9E03 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		36004ED424889AF4000D9E03 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		36004ED624889AFB000D9E03 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		36004ED824889B0F000D9E03 /* IngredientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientViewController.swift; sourceTree = "<group>"; };
+		36004EDA24889B17000D9E03 /* InstructionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
+		36004EDC24889B1D000D9E03 /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
+		36004EE02488A5B6000D9E03 /* Favorite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorite.storyboard; sourceTree = "<group>"; };
+		36004EE22488A5C0000D9E03 /* Product.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
+		36004EE42488A5C6000D9E03 /* Ingredient.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ingredient.storyboard; sourceTree = "<group>"; };
+		36004EE62488A5D2000D9E03 /* Instruction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Instruction.storyboard; sourceTree = "<group>"; };
+		36004EE82488A5D8000D9E03 /* Tips.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tips.storyboard; sourceTree = "<group>"; };
+		5106C1DFF495C05A5E0804CB /* Pods-Spoon Master.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spoon Master.release.xcconfig"; path = "Target Support Files/Pods-Spoon Master/Pods-Spoon Master.release.xcconfig"; sourceTree = "<group>"; };
+		E5DD643DC7C7CE1EDD9AD139 /* Pods_Spoon_Master.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spoon_Master.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5E772FD21C984C5B59DC5E2 /* Pods-Spoon Master.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spoon Master.debug.xcconfig"; path = "Target Support Files/Pods-Spoon Master/Pods-Spoon Master.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35F5636BBA386C2F208EB246 /* Pods_Spoon_Master.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +69,8 @@
 			children = (
 				36004E9B24889223000D9E03 /* Spoon Master */,
 				36004E9A24889223000D9E03 /* Products */,
+				E38D1FF4D579B6775F34C157 /* Pods */,
+				3F56D199009A4AB1264C5F6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +85,99 @@
 		36004E9B24889223000D9E03 /* Spoon Master */ = {
 			isa = PBXGroup;
 			children = (
-				36004E9C24889223000D9E03 /* AppDelegate.swift */,
-				36004E9E24889223000D9E03 /* SceneDelegate.swift */,
-				36004EA024889223000D9E03 /* ViewController.swift */,
-				36004EA224889223000D9E03 /* Main.storyboard */,
-				36004EA824889225000D9E03 /* Assets.xcassets */,
-				36004EAA24889225000D9E03 /* LaunchScreen.storyboard */,
+				36004EB3248895B7000D9E03 /* Application */,
+				36004EB4248895CF000D9E03 /* Data */,
+				36004EB624889613000D9E03 /* Scenes */,
+				36004EB724889643000D9E03 /* Controller */,
+				36004EB5248895F2000D9E03 /* Resources */,
 				36004EAD24889225000D9E03 /* Info.plist */,
 				36004EA524889223000D9E03 /* Spoon_Master.xcdatamodeld */,
 			);
 			path = "Spoon Master";
+			sourceTree = "<group>";
+		};
+		36004EB3248895B7000D9E03 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				36004E9C24889223000D9E03 /* AppDelegate.swift */,
+				36004E9E24889223000D9E03 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		36004EB4248895CF000D9E03 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				36004EB82488967F000D9E03 /* Model */,
+				36004EB924889698000D9E03 /* Source */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		36004EB5248895F2000D9E03 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				36004EBC248897EF000D9E03 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		36004EB624889613000D9E03 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				36004EAA24889225000D9E03 /* LaunchScreen.storyboard */,
+				36004EA224889223000D9E03 /* Main.storyboard */,
+				36004EE02488A5B6000D9E03 /* Favorite.storyboard */,
+				36004EE22488A5C0000D9E03 /* Product.storyboard */,
+				36004EE42488A5C6000D9E03 /* Ingredient.storyboard */,
+				36004EE62488A5D2000D9E03 /* Instruction.storyboard */,
+				36004EE82488A5D8000D9E03 /* Tips.storyboard */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		36004EB724889643000D9E03 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				36004ED224889AEA000D9E03 /* HomeViewController.swift */,
+				36004ED424889AF4000D9E03 /* FavoriteViewController.swift */,
+				36004ED624889AFB000D9E03 /* ProductViewController.swift */,
+				36004ED824889B0F000D9E03 /* IngredientViewController.swift */,
+				36004EDA24889B17000D9E03 /* InstructionViewController.swift */,
+				36004EDC24889B1D000D9E03 /* TipsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		36004EB82488967F000D9E03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		36004EB924889698000D9E03 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		3F56D199009A4AB1264C5F6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5DD643DC7C7CE1EDD9AD139 /* Pods_Spoon_Master.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E38D1FF4D579B6775F34C157 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5E772FD21C984C5B59DC5E2 /* Pods-Spoon Master.debug.xcconfig */,
+				5106C1DFF495C05A5E0804CB /* Pods-Spoon Master.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +187,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36004EB024889225000D9E03 /* Build configuration list for PBXNativeTarget "Spoon Master" */;
 			buildPhases = (
+				6F3B2161274366E7658F36B4 /* [CP] Check Pods Manifest.lock */,
 				36004E9524889223000D9E03 /* Sources */,
 				36004E9624889223000D9E03 /* Frameworks */,
 				36004E9724889223000D9E03 /* Resources */,
@@ -129,21 +240,56 @@
 			buildActionMask = 2147483647;
 			files = (
 				36004EAC24889225000D9E03 /* LaunchScreen.storyboard in Resources */,
-				36004EA924889225000D9E03 /* Assets.xcassets in Resources */,
+				36004EBD248897EF000D9E03 /* Assets.xcassets in Resources */,
+				36004EE92488A5D8000D9E03 /* Tips.storyboard in Resources */,
+				36004EE12488A5B6000D9E03 /* Favorite.storyboard in Resources */,
+				36004EE32488A5C0000D9E03 /* Product.storyboard in Resources */,
+				36004EE52488A5C6000D9E03 /* Ingredient.storyboard in Resources */,
 				36004EA424889223000D9E03 /* Main.storyboard in Resources */,
+				36004EE72488A5D2000D9E03 /* Instruction.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F3B2161274366E7658F36B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spoon Master-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		36004E9524889223000D9E03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36004EA124889223000D9E03 /* ViewController.swift in Sources */,
+				36004ED324889AEA000D9E03 /* HomeViewController.swift in Sources */,
+				36004ED924889B0F000D9E03 /* IngredientViewController.swift in Sources */,
+				36004EDB24889B17000D9E03 /* InstructionViewController.swift in Sources */,
 				36004E9D24889223000D9E03 /* AppDelegate.swift in Sources */,
+				36004ED724889AFB000D9E03 /* ProductViewController.swift in Sources */,
+				36004EDD24889B1D000D9E03 /* TipsViewController.swift in Sources */,
 				36004E9F24889223000D9E03 /* SceneDelegate.swift in Sources */,
+				36004ED524889AF4000D9E03 /* FavoriteViewController.swift in Sources */,
 				36004EA724889223000D9E03 /* Spoon_Master.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +432,7 @@
 		};
 		36004EB124889225000D9E03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5E772FD21C984C5B59DC5E2 /* Pods-Spoon Master.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +451,7 @@
 		};
 		36004EB224889225000D9E03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5106C1DFF495C05A5E0804CB /* Pods-Spoon Master.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
