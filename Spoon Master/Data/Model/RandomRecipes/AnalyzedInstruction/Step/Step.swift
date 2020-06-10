@@ -9,13 +9,13 @@
 import Foundation
 import ObjectMapper
 
-struct Step : Mappable {
+struct Step: Mappable {
     
-    var number : Int = 0
-    var step : String = ""
-    var ingredients : [Ingredient] = []
-    var equiments : [Equipment] = []
-    var lengths : [Length] = []
+    var number: Int = 0
+    var step: String = ""
+    var ingredients: [Ingredient] = []
+    var equiments: [Equipment] = []
+    var lengths: [Length] = []
     
     init?(map: Map) {
         mapping(map: map)
@@ -30,12 +30,12 @@ struct Step : Mappable {
     }
 }
 
-struct Length : Mappable {
+struct Length: Mappable {
     
-    var number : Int = 0
-    var unit : String = ""
+    var number: Int = 0
+    var unit: String = ""
     init?(map: Map) {
-        mapping(map : map)
+        mapping(map: map)
     }
     
     mutating func mapping(map: Map) {

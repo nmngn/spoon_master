@@ -1,14 +1,7 @@
 disabled_rules:
-- colon
-- comma
 - trailing_whitespace
-- vertical_whitespace
 - line_length
 - type_name
-- identifier_name
-- trailing_newline
-- unused_optional_binding
-- unused_closure_parameter
 
 opt_in_rules:
 - empty_count

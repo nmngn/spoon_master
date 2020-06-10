@@ -9,12 +9,12 @@
 import Foundation
 import ObjectMapper
 
-struct Nutrition : Mappable {
+struct Nutrition: Mappable {
     
-    var nutrients : [Nutrient] = []
-    var caloricBreakdowns : [CaloricBreakdown] = []
-    var calories : Int = 0
-    var protein : String = ""
+    var nutrients: [Nutrient] = []
+    var caloricBreakdowns: [CaloricBreakdown] = []
+    var calories: Int = 0
+    var protein: String = ""
     
     init?(map: Map) {
         mapping(map: map)
@@ -28,12 +28,12 @@ struct Nutrition : Mappable {
     }
 }
 
-struct Nutrient : Mappable {
+struct Nutrient: Mappable {
     
-    var title : String = ""
-    var amount : Int = 0
-    var unit : String = ""
-    var percentOfDailyNeeds : Double = 0.0
+    var title: String = ""
+    var amount: Int = 0
+    var unit: String = ""
+    var percentOfDailyNeeds: Double = 0.0
     
     init?(map: Map) {
            mapping(map: map)
@@ -47,11 +47,11 @@ struct Nutrient : Mappable {
        }
 }
 
-struct CaloricBreakdown : Mappable {
+struct CaloricBreakdown: Mappable {
     
-    var percentProtein : Double = 0.0
-    var percentFat : Double = 0.0
-    var percentCarbs : Double = 0.0
+    var percentProtein: Double = 0.0
+    var percentFat: Double = 0.0
+    var percentCarbs: Double = 0.0
     
     init?(map: Map) {
         mapping(map: map)

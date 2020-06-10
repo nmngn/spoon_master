@@ -9,10 +9,10 @@
 import Foundation
 import ObjectMapper
 
-struct AnalyzedInstruction : Mappable {
+struct AnalyzedInstruction: Mappable {
     
-    var name : String = ""
-    var steps : [Step] = []
+    var name: String = ""
+    var steps: [Step] = []
     
     init?(map: Map) {
         mapping(map: map)

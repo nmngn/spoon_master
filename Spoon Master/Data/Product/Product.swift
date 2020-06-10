@@ -9,10 +9,10 @@
 import Foundation
 import ObjectMapper
 
-struct Product : Mappable {
+struct Product: Mappable {
   
-    var products : [Item] = []
-    var totalProducts : Int = 0
+    var products: [Item] = []
+    var totalProducts: Int = 0
     
     init?(map: Map) {
           mapping(map: map)
@@ -24,18 +24,18 @@ struct Product : Mappable {
       }
 }
 
-struct Item : Mappable {
-    var id : Int = 0
-    var title : String = ""
-    var image : String = ""
-    var imageType : String = ""
+struct Item: Mappable {
+    var itemId: Int = 0
+    var title: String = ""
+    var image: String = ""
+    var imageType: String = ""
     
     init?(map: Map) {
           mapping(map: map)
       }
       
       mutating func mapping(map: Map) {
-        id <- map["id"]
+        itemId <- map["id"]
         title <- map["title"]
         image <- map["image"]
         imageType <- map["imageType"]

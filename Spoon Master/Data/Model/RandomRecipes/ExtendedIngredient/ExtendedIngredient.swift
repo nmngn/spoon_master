@@ -9,21 +9,21 @@
 import Foundation
 import ObjectMapper
 
-struct ExtendedIngredient : Mappable {
+struct ExtendedIngredient: Mappable {
     
-    var aisle : String = ""
-    var id : Int = 0
-    var image : String = ""
-    var name : String = ""
-    var amount : Int = 0
-    var unit : String = ""
+    var aisle: String = ""
+    var extenId: Int = 0
+    var image: String = ""
+    var name: String = ""
+    var amount: Int = 0
+    var unit: String = ""
     
     init?(map: Map) {
         mapping(map: map)
     }
     
     mutating func mapping(map: Map) {
-        id <- map["id"]
+        extenId <- map["id"]
         aisle <- map["aisle"]
         image <- map["image"]
         name <- map["name"]
