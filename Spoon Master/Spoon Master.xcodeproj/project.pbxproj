@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,16 @@
 		36004EE52488A5C6000D9E03 /* Ingredient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36004EE42488A5C6000D9E03 /* Ingredient.storyboard */; };
 		36004EE72488A5D2000D9E03 /* Instruction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36004EE62488A5D2000D9E03 /* Instruction.storyboard */; };
 		36004EE92488A5D8000D9E03 /* Tips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36004EE82488A5D8000D9E03 /* Tips.storyboard */; };
+		36A8EE84248F3BEE006DEE6D /* ExtendedIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A8EE7F248F3BED006DEE6D /* ExtendedIngredient.swift */; };
+		36A8EE85248F3BEE006DEE6D /* RandomRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A8EE80248F3BED006DEE6D /* RandomRecipes.swift */; };
+		36A8EE86248F3BEE006DEE6D /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A8EE81248F3BEE006DEE6D /* Ingredient.swift */; };
+		36A8EE87248F3BEE006DEE6D /* AnalyzedInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A8EE82248F3BEE006DEE6D /* AnalyzedInstruction.swift */; };
+		36A8EE88248F3BEE006DEE6D /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A8EE83248F3BEE006DEE6D /* Equipment.swift */; };
+		36A8EE8D248F3C1D006DEE6D /* Nutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A8EE8A248F3C1D006DEE6D /* Nutrition.swift */; };
+		36A8EE8E248F3C1D006DEE6D /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A8EE8B248F3C1D006DEE6D /* ProductDetail.swift */; };
+		36A8EE8F248F3C1D006DEE6D /* IngredientP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A8EE8C248F3C1D006DEE6D /* IngredientP.swift */; };
+		36A8EE92248F3C2D006DEE6D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A8EE91248F3C2D006DEE6D /* Product.swift */; };
+		36A8EE9F248F42ED006DEE6D /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A8EE9E248F42ED006DEE6D /* Step.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +57,16 @@
 		36004EE42488A5C6000D9E03 /* Ingredient.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ingredient.storyboard; sourceTree = "<group>"; };
 		36004EE62488A5D2000D9E03 /* Instruction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Instruction.storyboard; sourceTree = "<group>"; };
 		36004EE82488A5D8000D9E03 /* Tips.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tips.storyboard; sourceTree = "<group>"; };
+		36A8EE7F248F3BED006DEE6D /* ExtendedIngredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedIngredient.swift; sourceTree = "<group>"; };
+		36A8EE80248F3BED006DEE6D /* RandomRecipes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomRecipes.swift; sourceTree = "<group>"; };
+		36A8EE81248F3BEE006DEE6D /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		36A8EE82248F3BEE006DEE6D /* AnalyzedInstruction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzedInstruction.swift; sourceTree = "<group>"; };
+		36A8EE83248F3BEE006DEE6D /* Equipment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
+		36A8EE8A248F3C1D006DEE6D /* Nutrition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nutrition.swift; sourceTree = "<group>"; };
+		36A8EE8B248F3C1D006DEE6D /* ProductDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
+		36A8EE8C248F3C1D006DEE6D /* IngredientP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientP.swift; sourceTree = "<group>"; };
+		36A8EE91248F3C2D006DEE6D /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		36A8EE9E248F42ED006DEE6D /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		5106C1DFF495C05A5E0804CB /* Pods-Spoon Master.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spoon Master.release.xcconfig"; path = "Target Support Files/Pods-Spoon Master/Pods-Spoon Master.release.xcconfig"; sourceTree = "<group>"; };
 		E5DD643DC7C7CE1EDD9AD139 /* Pods_Spoon_Master.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spoon_Master.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5E772FD21C984C5B59DC5E2 /* Pods-Spoon Master.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spoon Master.debug.xcconfig"; path = "Target Support Files/Pods-Spoon Master/Pods-Spoon Master.debug.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +172,8 @@
 		36004EB82488967F000D9E03 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				36A8EE7E248F3B86006DEE6D /* RandomRecipes */,
+				36A8EE89248F3C13006DEE6D /* Product */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -161,6 +183,63 @@
 			children = (
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		36A8EE7E248F3B86006DEE6D /* RandomRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				36A8EE80248F3BED006DEE6D /* RandomRecipes.swift */,
+				36A8EEA0248F4340006DEE6D /* ExtendedIngredient */,
+				36A8EEA1248F4373006DEE6D /* AnalyzedInstruction */,
+			);
+			path = RandomRecipes;
+			sourceTree = "<group>";
+		};
+		36A8EE89248F3C13006DEE6D /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				36A8EE91248F3C2D006DEE6D /* Product.swift */,
+				36A8EE90248F3C28006DEE6D /* DetailProduct */,
+			);
+			name = Product;
+			path = ../Product;
+			sourceTree = "<group>";
+		};
+		36A8EE90248F3C28006DEE6D /* DetailProduct */ = {
+			isa = PBXGroup;
+			children = (
+				36A8EE8A248F3C1D006DEE6D /* Nutrition.swift */,
+				36A8EE8B248F3C1D006DEE6D /* ProductDetail.swift */,
+				36A8EE8C248F3C1D006DEE6D /* IngredientP.swift */,
+			);
+			path = DetailProduct;
+			sourceTree = "<group>";
+		};
+		36A8EEA0248F4340006DEE6D /* ExtendedIngredient */ = {
+			isa = PBXGroup;
+			children = (
+				36A8EE7F248F3BED006DEE6D /* ExtendedIngredient.swift */,
+			);
+			path = ExtendedIngredient;
+			sourceTree = "<group>";
+		};
+		36A8EEA1248F4373006DEE6D /* AnalyzedInstruction */ = {
+			isa = PBXGroup;
+			children = (
+				36A8EE82248F3BEE006DEE6D /* AnalyzedInstruction.swift */,
+				36A8EEA2248F439F006DEE6D /* Step */,
+			);
+			path = AnalyzedInstruction;
+			sourceTree = "<group>";
+		};
+		36A8EEA2248F439F006DEE6D /* Step */ = {
+			isa = PBXGroup;
+			children = (
+				36A8EE9E248F42ED006DEE6D /* Step.swift */,
+				36A8EE81248F3BEE006DEE6D /* Ingredient.swift */,
+				36A8EE83248F3BEE006DEE6D /* Equipment.swift */,
+			);
+			path = Step;
 			sourceTree = "<group>";
 		};
 		3F56D199009A4AB1264C5F6B /* Frameworks */ = {
@@ -191,6 +270,8 @@
 				36004E9524889223000D9E03 /* Sources */,
 				36004E9624889223000D9E03 /* Frameworks */,
 				36004E9724889223000D9E03 /* Resources */,
+				C68AAAF16E1131BB3A626CF4 /* [CP] Embed Pods Frameworks */,
+				3652DB3A248F8A8100F57439 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -253,6 +334,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3652DB3A248F8A8100F57439 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		6F3B2161274366E7658F36B4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,6 +373,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C68AAAF16E1131BB3A626CF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spoon Master/Pods-Spoon Master-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spoon Master/Pods-Spoon Master-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Spoon Master/Pods-Spoon Master-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -284,12 +399,22 @@
 			files = (
 				36004ED324889AEA000D9E03 /* HomeViewController.swift in Sources */,
 				36004ED924889B0F000D9E03 /* IngredientViewController.swift in Sources */,
+				36A8EE8E248F3C1D006DEE6D /* ProductDetail.swift in Sources */,
+				36A8EE8D248F3C1D006DEE6D /* Nutrition.swift in Sources */,
+				36A8EE85248F3BEE006DEE6D /* RandomRecipes.swift in Sources */,
 				36004EDB24889B17000D9E03 /* InstructionViewController.swift in Sources */,
 				36004E9D24889223000D9E03 /* AppDelegate.swift in Sources */,
 				36004ED724889AFB000D9E03 /* ProductViewController.swift in Sources */,
+				36A8EE84248F3BEE006DEE6D /* ExtendedIngredient.swift in Sources */,
 				36004EDD24889B1D000D9E03 /* TipsViewController.swift in Sources */,
+				36A8EE86248F3BEE006DEE6D /* Ingredient.swift in Sources */,
+				36A8EE92248F3C2D006DEE6D /* Product.swift in Sources */,
+				36A8EE87248F3BEE006DEE6D /* AnalyzedInstruction.swift in Sources */,
 				36004E9F24889223000D9E03 /* SceneDelegate.swift in Sources */,
+				36A8EE8F248F3C1D006DEE6D /* IngredientP.swift in Sources */,
 				36004ED524889AF4000D9E03 /* FavoriteViewController.swift in Sources */,
+				36A8EE88248F3BEE006DEE6D /* Equipment.swift in Sources */,
+				36A8EE9F248F42ED006DEE6D /* Step.swift in Sources */,
 				36004EA724889223000D9E03 /* Spoon_Master.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
