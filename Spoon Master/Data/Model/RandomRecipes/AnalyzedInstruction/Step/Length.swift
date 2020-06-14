@@ -1,25 +1,25 @@
 //
-//  AnalyzedInstructions.swift
+//  Length.swift
 //  Spoon Master
 //
-//  Created by Nam Ngây on 6/5/20.
+//  Created by Nam Ngây on 6/17/20.
 //  Copyright © 2020 Nam Ngây. All rights reserved.
 //
 
 import Foundation
 import ObjectMapper
 
-struct AnalyzedInstruction: Mappable {
+struct Length: Mappable {
     
-    var name = ""
-    var steps: [Step] = []
+    var number = 0
+    var unit = ""
     
     init?(map: Map) {
         mapping(map: map)
     }
     
     mutating func mapping(map: Map) {
-        name <- map["name"]
-        steps <- map["steps"]
+        number <- map["number"]
+        unit <- map["unit"]
     }
 }

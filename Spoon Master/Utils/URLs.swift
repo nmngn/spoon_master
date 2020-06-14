@@ -9,6 +9,14 @@
 import Foundation
 
 struct URLs {
-    private static var randomRecipes = "https://api.spoonacular.com/recipes/random?apiKey="
-    private static var product = "https://api.spoonacular.com/food/products/search?query=protein&apiKey="
+    private static var baseUrl = "https://api.spoonacular.com"
+    
+    static let randomRecipes =
+    baseUrl + "/recipes/random"
+    
+    static let product =
+    baseUrl + "/products/search"
+    
+    static let searchRecipes =
+    baseUrl + "/recipes/search"
 }

@@ -8,7 +8,7 @@ PODS:
   - Then (2.6.0)
 
 DEPENDENCIES:
-  - AlamofireObjectMapper (~> 5.2)
+  - AlamofireObjectMapper (~> 5.2.1)
   - ObjectMapper (~> 3.5)
   - SwiftLint
   - Then
@@ -28,6 +28,6 @@ SPEC CHECKSUMS:
   SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
   Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
 
-PODFILE CHECKSUM: d0de6bf51c17fcadb6440bb8a65ffa936f0e7f26
+PODFILE CHECKSUM: 9c07100189ada36da9057b57c1843a5fc62ad9bb
 
 COCOAPODS: 1.9.1

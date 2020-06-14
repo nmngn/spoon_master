@@ -11,16 +11,16 @@ import ObjectMapper
 
 struct ProductDetail: Mappable {
     
-    var productId: Int = 0
-    var title: String = ""
-    var price: Double = 0.0
+    var productId = 0
+    var title = ""
+    var price = 0.0
     var nutritions: [Nutrition] = []
-    var servingSize: String = ""
-    var description: String = ""
-    var upc: String = ""
+    var servingSize = ""
+    var description = ""
+    var upc = ""
     var ingredients: [IngredientP] = []
-    var ingredientCount: Int = 0
-    var ingredientList: String = ""
+    var ingredientCount = 0
+    var ingredientList = ""
     var image: [String] = []
     
     init?(map: Map) {

@@ -11,10 +11,10 @@ import ObjectMapper
 
 struct Equipment: Mappable {
     
-    var equipmentId: Int = 0
-    var name: String = ""
-    var localizedName: String = ""
-    var image: String = ""
+    var equipmentId = 0
+    var name = ""
+    var localizedName = ""
+    var image = ""
     
     init?(map: Map) {
         mapping(map: map)

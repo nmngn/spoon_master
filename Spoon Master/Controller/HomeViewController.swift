@@ -12,23 +12,23 @@ import Then
 
 final class HomeViewController: UIViewController {
     
-    var randomRecipes = [RandomRecipes]()
-    let repositories = Repositories()
-    
     @IBOutlet private weak var tableView: UITableView!
+    
+    private let repositories = Repositories(api: .share)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.then {
+        tableView.do {
             $0.delegate = self
             $0.dataSource = self
-            $0.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeTableViewCell")
+            $0.register(UINib(nibName: Constant.homeTBVCIdentifier, bundle: nil), forCellReuseIdentifier: Constant.homeTBVCIdentifier)
+            $0.register(UINib(nibName: Constant.homeHeaderView, bundle: nil), forHeaderFooterViewReuseIdentifier: Constant.homeHeaderView)
         }
-        repositories.takeRandomRecipesData {
-            print($0)
+        repositories.takeRandomRecipesData(number: 10) {_ in
+            print("Sucess")
         }
-        repositories.takeProductData {
-            print($0)
+        repositories.takeProductData(query: "protein", number: 10) {_ in
+            print("Sucess")
         }
         navigationItem.hidesBackButton = true
     }
@@ -37,6 +37,9 @@ final class HomeViewController: UIViewController {
 
 // MARK: - UITableView Delegate
 extension HomeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return Constant.heightForRow
+    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
@@ -45,23 +48,27 @@ extension HomeViewController: UITableViewDelegate {
 // MARK: - UITableView DataSource
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return Constant.numberOfRowsInSection
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as? HomeTableViewCell else { print("ERROR")
-            return UITableViewCell() }
-        setupCell(indexPath, cell)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: Constant.homeTBVCIdentifier, for: indexPath) as? HomeTableViewCell else {
+            return UITableViewCell()
+        }
         return cell
     }
     
-    func setupCell( _ data: IndexPath, _ cell: HomeTableViewCell) {
-        switch data.row {
-        case 0 :
-            cell.categoryTitle.text = " Popular Foods"
-        case 1 :
-            cell.categoryTitle.text = " Popular Recipes"
-        default :
-            cell.categoryTitle.text = " Popular Products"
+    // MARK: - Custom TableView Cell
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return Constant.numberOfSection
+    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return Constant.heightOfHeaderInSection
+    }
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let header = self.tableView.dequeueReusableHeaderFooterView(withIdentifier: Constant.homeHeaderView) as? HomeHeaderView else {
+            return UIView()
         }
+        header.setupName(section: section)
+        return header
     }
 }

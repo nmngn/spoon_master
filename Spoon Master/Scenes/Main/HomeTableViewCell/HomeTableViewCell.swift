@@ -7,13 +7,11 @@
 //
 
 import UIKit
+import Then
 
-class HomeTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var categoryTitle: UILabel!
+final class HomeTableViewCell: UITableViewCell {
+    
     @IBOutlet private weak var collectionView: UICollectionView!
-    @IBOutlet private weak var nameOfImage: UILabel!
-    @IBOutlet private weak var imageOfFood: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,5 +20,4 @@ class HomeTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-    
 }

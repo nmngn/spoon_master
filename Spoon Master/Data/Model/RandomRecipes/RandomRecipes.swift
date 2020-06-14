@@ -24,15 +24,15 @@ struct RandomRecipes: Mappable {
 struct Recipe: Mappable {
     
     var extendedIngredients: [ExtendedIngredient] = []
-    var randomId: Int = 0
-    var title: String = ""
-    var readyInMinutes: Int = 0
-    var sourceUrl: String = ""
-    var image: String = ""
-    var summary: String = ""
-    var instructions: String = ""
+    var randomId = 0
+    var title = ""
+    var readyInMinutes = 0
+    var sourceUrl = ""
+    var image = ""
+    var summary = ""
+    var instructions = ""
     var analyzedInstructions: [AnalyzedInstruction] = []
-    var spoonacularSourceUrl: String = ""
+    var spoonacularSourceUrl = ""
     
     init?(map: Map) {
         mapping(map: map)

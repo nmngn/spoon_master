@@ -8,6 +8,6 @@ target 'Spoon Master' do
   # Pods for Spoon Master
 pod 'SwiftLint'
 pod 'ObjectMapper', '~> 3.5'
-pod 'AlamofireObjectMapper', '~> 5.2'
+pod 'AlamofireObjectMapper', '~> 5.2.1'
 pod 'Then'
 end

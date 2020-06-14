@@ -11,9 +11,9 @@ import ObjectMapper
 
 struct IngredientP: Mappable {
     
-    var name: String = ""
-    var safetyLevel: String = ""
-    var description: String = ""
+    var name = ""
+    var safetyLevel = ""
+    var description = ""
     
     init?(map: Map) {
         mapping(map: map)
