@@ -1,18 +1,18 @@
 //
-//  AnalyzedInstructions.swift
+//  ErrorResponse.swift
 //  Spoon Master
 //
-//  Created by Nam Ngây on 6/5/20.
+//  Created by Nam Ngây on 6/14/20.
 //  Copyright © 2020 Nam Ngây. All rights reserved.
 //
 
 import Foundation
 import ObjectMapper
 
-struct AnalyzedInstruction: Mappable {
+struct ErrorResponse: Mappable {
     
-    var name = ""
-    var steps: [Step] = []
+    var name: String = ""
+    var message: String = ""
     
     init?(map: Map) {
         mapping(map: map)
@@ -20,6 +20,6 @@ struct AnalyzedInstruction: Mappable {
     
     mutating func mapping(map: Map) {
         name <- map["name"]
-        steps <- map["steps"]
+        message <- map["message"]
     }
 }

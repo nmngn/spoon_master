@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 
 struct RandomRecipes: Mappable {
-    var recipes : [Recipe] = []
+    var recipes: [Recipe] = []
     
     init?(map: Map) {
         mapping(map: map)
@@ -21,25 +21,24 @@ struct RandomRecipes: Mappable {
     }
 }
 
-
-struct Recipe : Mappable {
+struct Recipe: Mappable {
     
-    var extendedIngredients : [ExtendedIngredient] = []
-    var id : Int = 0
-    var title : String = ""
-    var readyInMinutes :Int = 0
-    var sourceUrl : String = ""
-    var image : String = ""
-    var summary : String = ""
-    var instructions : String = ""
-    var analyzedInstructions : [AnalyzedInstruction] = []
-    var spoonacularSourceUrl : String = ""
+    var extendedIngredients: [ExtendedIngredient] = []
+    var randomId = 0
+    var title = ""
+    var readyInMinutes = 0
+    var sourceUrl = ""
+    var image = ""
+    var summary = ""
+    var instructions = ""
+    var analyzedInstructions: [AnalyzedInstruction] = []
+    var spoonacularSourceUrl = ""
     
     init?(map: Map) {
         mapping(map: map)
     }
     mutating func mapping(map: Map) {
-        id <- map["id"]
+        randomId <- map["id"]
         title <- map["title"]
         readyInMinutes <- map["readyInMinutes"]
         sourceUrl <- map["sourceUrl"]
@@ -51,4 +50,3 @@ struct Recipe : Mappable {
         analyzedInstructions <- map["analyzedInstruction"]
     }
 }
-

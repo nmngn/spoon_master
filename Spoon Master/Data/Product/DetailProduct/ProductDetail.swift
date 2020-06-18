@@ -9,26 +9,26 @@
 import Foundation
 import ObjectMapper
 
-struct ProductDetail : Mappable {
+struct ProductDetail: Mappable {
     
-    var id : Int = 0
-    var title : String = ""
-    var price : Double = 0.0
-    var nutritions : [Nutrition] = []
-    var servingSize : String = ""
-    var description : String = ""
-    var upc : String = ""
-    var ingredients : [IngredientP] = []
-    var ingredientCount : Int = 0
-    var ingredientList : String = ""
-    var image : [String] = []
+    var productId = 0
+    var title = ""
+    var price = 0.0
+    var nutritions: [Nutrition] = []
+    var servingSize = ""
+    var description = ""
+    var upc = ""
+    var ingredients: [IngredientP] = []
+    var ingredientCount = 0
+    var ingredientList = ""
+    var image: [String] = []
     
     init?(map: Map) {
         mapping(map: map)
     }
     
     mutating func mapping(map: Map) {
-        id <- map["id"]
+        productId <- map["id"]
         title <- map["title"]
         price <- map["price"]
         nutritions <- map["nutrition"]
