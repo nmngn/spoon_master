@@ -11,12 +11,9 @@ import Foundation
 struct URLs {
     private static var baseUrl = "https://api.spoonacular.com"
     
-    static let randomRecipes =
-    baseUrl + "/recipes/random"
+    static let randomRecipes = baseUrl + "/recipes/random"
     
-    static let product =
-    baseUrl + "/products/search"
+    static let product = baseUrl + "/food/products/search"
     
-    static let searchRecipes =
-    baseUrl + "/recipes/search"
+    static let searchRecipes = baseUrl + "/recipes/search"
 }

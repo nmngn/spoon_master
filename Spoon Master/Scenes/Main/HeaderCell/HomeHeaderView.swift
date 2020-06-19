@@ -12,14 +12,7 @@ final class HomeHeaderView: UITableViewHeaderFooterView {
     
     @IBOutlet private weak var category: UILabel!
     
-    func setupName(section: Int) {
-        switch section {
-        case 0 :
-            category.text = Constant.popularFoods
-        case 1 :
-            category.text = Constant.popularRecipes
-        default :
-            category.text = Constant.popularProducts
-        }
+    func setupName(sectionTitle: String) {
+        category.text = sectionTitle
     }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class TipsViewController: UIViewController {
+final class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

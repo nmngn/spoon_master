@@ -19,12 +19,12 @@
 		36004ED724889AFB000D9E03 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36004ED624889AFB000D9E03 /* ProductViewController.swift */; };
 		36004ED924889B0F000D9E03 /* IngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36004ED824889B0F000D9E03 /* IngredientViewController.swift */; };
 		36004EDB24889B17000D9E03 /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36004EDA24889B17000D9E03 /* InstructionViewController.swift */; };
-		36004EDD24889B1D000D9E03 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36004EDC24889B1D000D9E03 /* TipsViewController.swift */; };
+		36004EDD24889B1D000D9E03 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36004EDC24889B1D000D9E03 /* DetailViewController.swift */; };
 		36004EE12488A5B6000D9E03 /* Favorite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36004EE02488A5B6000D9E03 /* Favorite.storyboard */; };
 		36004EE32488A5C0000D9E03 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36004EE22488A5C0000D9E03 /* Product.storyboard */; };
 		36004EE52488A5C6000D9E03 /* Ingredient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36004EE42488A5C6000D9E03 /* Ingredient.storyboard */; };
 		36004EE72488A5D2000D9E03 /* Instruction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36004EE62488A5D2000D9E03 /* Instruction.storyboard */; };
-		36004EE92488A5D8000D9E03 /* Tips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36004EE82488A5D8000D9E03 /* Tips.storyboard */; };
+		36004EE92488A5D8000D9E03 /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36004EE82488A5D8000D9E03 /* Details.storyboard */; };
 		360264482498A4CF00BE293F /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360264472498A4CF00BE293F /* HomeHeaderView.swift */; };
 		3602644E2498AAEE00BE293F /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3602644C2498AAEE00BE293F /* HomeHeaderView.xib */; };
 		3652CDBA24969384005A8D38 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652CDB924969384005A8D38 /* BaseRequest.swift */; };
@@ -74,12 +74,12 @@
 		36004ED624889AFB000D9E03 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		36004ED824889B0F000D9E03 /* IngredientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientViewController.swift; sourceTree = "<group>"; };
 		36004EDA24889B17000D9E03 /* InstructionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
-		36004EDC24889B1D000D9E03 /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
+		36004EDC24889B1D000D9E03 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		36004EE02488A5B6000D9E03 /* Favorite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorite.storyboard; sourceTree = "<group>"; };
 		36004EE22488A5C0000D9E03 /* Product.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
 		36004EE42488A5C6000D9E03 /* Ingredient.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ingredient.storyboard; sourceTree = "<group>"; };
 		36004EE62488A5D2000D9E03 /* Instruction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Instruction.storyboard; sourceTree = "<group>"; };
-		36004EE82488A5D8000D9E03 /* Tips.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tips.storyboard; sourceTree = "<group>"; };
+		36004EE82488A5D8000D9E03 /* Details.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Details.storyboard; sourceTree = "<group>"; };
 		360264472498A4CF00BE293F /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		3602644C2498AAEE00BE293F /* HomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
 		3652CDB924969384005A8D38 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
@@ -195,11 +195,11 @@
 			children = (
 				36004EAA24889225000D9E03 /* LaunchScreen.storyboard */,
 				3677981F2491B85D00F812AA /* Main */,
+				36004EE82488A5D8000D9E03 /* Details.storyboard */,
 				36004EE02488A5B6000D9E03 /* Favorite.storyboard */,
 				36004EE22488A5C0000D9E03 /* Product.storyboard */,
 				36004EE42488A5C6000D9E03 /* Ingredient.storyboard */,
 				36004EE62488A5D2000D9E03 /* Instruction.storyboard */,
-				36004EE82488A5D8000D9E03 /* Tips.storyboard */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -208,11 +208,11 @@
 			isa = PBXGroup;
 			children = (
 				36004ED224889AEA000D9E03 /* HomeViewController.swift */,
+				36004EDC24889B1D000D9E03 /* DetailViewController.swift */,
 				36004ED424889AF4000D9E03 /* FavoriteViewController.swift */,
 				36004ED624889AFB000D9E03 /* ProductViewController.swift */,
 				36004ED824889B0F000D9E03 /* IngredientViewController.swift */,
 				36004EDA24889B17000D9E03 /* InstructionViewController.swift */,
-				36004EDC24889B1D000D9E03 /* TipsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -489,7 +489,7 @@
 				3602644E2498AAEE00BE293F /* HomeHeaderView.xib in Resources */,
 				367798292491B89D00F812AA /* HomeTableViewCell.xib in Resources */,
 				36004EBD248897EF000D9E03 /* Assets.xcassets in Resources */,
-				36004EE92488A5D8000D9E03 /* Tips.storyboard in Resources */,
+				36004EE92488A5D8000D9E03 /* Details.storyboard in Resources */,
 				36004EE12488A5B6000D9E03 /* Favorite.storyboard in Resources */,
 				36004EE32488A5C0000D9E03 /* Product.storyboard in Resources */,
 				36004EE52488A5C6000D9E03 /* Ingredient.storyboard in Resources */,
@@ -581,7 +581,7 @@
 				36004E9D24889223000D9E03 /* AppDelegate.swift in Sources */,
 				36004ED724889AFB000D9E03 /* ProductViewController.swift in Sources */,
 				36A8EE84248F3BEE006DEE6D /* ExtendedIngredient.swift in Sources */,
-				36004EDD24889B1D000D9E03 /* TipsViewController.swift in Sources */,
+				36004EDD24889B1D000D9E03 /* DetailViewController.swift in Sources */,
 				367798242491B88E00F812AA /* HomeCollectionViewCell.swift in Sources */,
 				36D495F424931A7D00753F85 /* Constant.swift in Sources */,
 				366CBDB32497639F00FB478E /* BaseError.swift in Sources */,
