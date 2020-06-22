@@ -10,4 +10,5 @@ pod 'SwiftLint'
 pod 'ObjectMapper', '~> 3.5'
 pod 'AlamofireObjectMapper', '~> 5.2.1'
 pod 'Then'
+pod 'Kingfisher', '~> 5.0'
 end
