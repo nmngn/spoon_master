@@ -61,7 +61,7 @@
                         <viewLayoutGuide key="safeArea" id="LSX-NQ-KqO"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="c5c-fp-6MK">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="heart.fill" catalog="system" id="Cfe-sY-HaX"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="heart.circle.fill" catalog="system" id="Cfe-sY-HaX"/>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="WlX-QR-u3J" id="pTW-0y-0jB"/>
@@ -92,6 +92,6 @@
     </scenes>
     <resources>
         <image name="Artboard 1" width="1125" height="2436"/>
-        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="heart.circle.fill" catalog="system" width="128" height="121"/>
     </resources>
 </document>

@@ -9,15 +9,21 @@
 import UIKit
 import Then
 
+ protocol HomeDelegate: class {
+    func navigateToDetailScreen(_ data: DataCell)
+}
+
 final class HomeTableViewCell: UITableViewCell {
     
     @IBOutlet private weak var collectionView: UICollectionView!
-    
+        
     private var data = [DataCell]() {
         didSet {
             collectionView.reloadData()
         }
     }
+
+    weak var delegate: HomeDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,8 +34,8 @@ final class HomeTableViewCell: UITableViewCell {
         collectionView.do {
             $0.delegate = self
             $0.dataSource = self
-            $0.register(UINib(nibName: Constant.homeCLTVCIdentifier, bundle: nil),
-                        forCellWithReuseIdentifier: Constant.homeCLTVCIdentifier)
+            $0.register(UINib(nibName: Constant.Identifier.homeCLTVCIdentifier, bundle: nil),
+                        forCellWithReuseIdentifier: Constant.Identifier.homeCLTVCIdentifier)
         }
     }
     
@@ -40,6 +46,9 @@ final class HomeTableViewCell: UITableViewCell {
 
 // MARK: - UICollectionView Dalegate
 extension HomeTableViewCell: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.navigateToDetailScreen(data[indexPath.row])
+    }
 }
 
 // MARK: - UICollectionView DataSource
@@ -50,7 +59,7 @@ extension HomeTableViewCell: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constant.homeCLTVCIdentifier, for: indexPath) as? HomeCollectionViewCell
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constant.Identifier.homeCLTVCIdentifier, for: indexPath) as? HomeCollectionViewCell
             else {
                 return UICollectionViewCell()
         }
