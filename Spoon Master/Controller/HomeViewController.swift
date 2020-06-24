@@ -25,13 +25,15 @@ final class HomeViewController: UIViewController {
         tableView.do {
             $0.delegate = self
             $0.dataSource = self
-            $0.register(UINib(nibName: Constant.Identifier.homeTBVCIdentifier, bundle: nil), forCellReuseIdentifier: Constant.Identifier.homeTBVCIdentifier)
-            $0.register(UINib(nibName: Constant.Identifier.homeHeaderView, bundle: nil), forHeaderFooterViewReuseIdentifier: Constant.Identifier.homeHeaderView)
+            $0.register(UINib(nibName: Constant.Identifier.homeTBVCIdentifier, bundle: nil),
+                        forCellReuseIdentifier: Constant.Identifier.homeTBVCIdentifier)
+            $0.register(UINib(nibName: Constant.Identifier.homeHeaderView, bundle: nil),
+                        forHeaderFooterViewReuseIdentifier: Constant.Identifier.homeHeaderView)
         }
         configHomeData()
         navigationItem.hidesBackButton = true
     }
-// MARK: - Configdata & Fetch
+    // MARK: - Configdata & Fetch
     private func configHomeData() {
         repositories.takeRandomRecipesData(number: 20) { [weak self] (results) in
             DispatchQueue.main.async {
@@ -102,11 +104,11 @@ extension HomeViewController: UITableViewDataSource {
         
         switch indexPath.section {
         case 0:
-            cell.configData(popularFoods, type: Constant.Serial.zero)
+            cell.configData(popularFoods)
         case 1:
-            cell.configData(popularRecipes, type: Constant.Serial.one)
+            cell.configData(popularRecipes)
         default:
-            cell.configData(popularProducts, type: Constant.Serial.two)
+            cell.configData(popularProducts)
         }
         return cell
     }
@@ -119,8 +121,10 @@ extension HomeViewController: UITableViewDataSource {
         return Constant.Height.heightOfHeaderInSection
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        guard let header = self.tableView.dequeueReusableHeaderFooterView(withIdentifier: Constant.Identifier.homeHeaderView) as? HomeHeaderView else {
-            return UIView()
+        guard let header = self.tableView.dequeueReusableHeaderFooterView(
+            withIdentifier: Constant.Identifier.homeHeaderView) as?
+            HomeHeaderView else {
+                return UIView()
         }
         switch section {
         case 0:
@@ -136,21 +140,21 @@ extension HomeViewController: UITableViewDataSource {
 
 // MARK: - HomeDelegate
 extension HomeViewController: HomeDelegate {
-    func changeRecipesScreen(_ recipe: DataCell) {
-        let storyboard = UIStoryboard(name: "Details", bundle: nil)
-        if let detailVC = storyboard.instantiateViewController(withIdentifier: Constant.Identifier.detailViewController) as? DetailViewController {
-            navigationController?.pushViewController(detailVC, animated: true)
-            switch recipe {
-            case .recipesCell(let value):
+    func navigateToDetailScreen(_ data: DataCell) {
+        switch data {
+        case .recipesCell(let value):
+            let storyboard = UIStoryboard(name: "Details", bundle: nil)
+            if let detailVC = storyboard.instantiateViewController(
+                withIdentifier: Constant.Identifier.detailViewController) as?
+                DetailViewController {
+                navigationController?.pushViewController(detailVC, animated: true)
                 detailVC.takeData(value)
-            case .productsCell(_ ):
-                break
             }
-        }
-    }
-    
-    func changeProductScreen(_ product: DataCell) {
-        let productVC = UIStoryboard(name: "Product", bundle: nil).instantiateViewController(withIdentifier: Constant.Identifier.productViewController)
-        navigationController?.pushViewController(productVC, animated: true)
+
+        case .productsCell(_ ):
+            let productVC = UIStoryboard(name: "Product", bundle: nil).instantiateViewController(
+                    withIdentifier: Constant.Identifier.productViewController)
+                navigationController?.pushViewController(productVC, animated: true)
+            }
     }
 }

@@ -10,22 +10,19 @@ import UIKit
 import Then
 
  protocol HomeDelegate: class {
-    func changeRecipesScreen(_ recipe: DataCell)
-    func changeProductScreen(_ product: DataCell)
+    func navigateToDetailScreen(_ data: DataCell)
 }
 
 final class HomeTableViewCell: UITableViewCell {
     
     @IBOutlet private weak var collectionView: UICollectionView!
-    
-    private var type = 0
-    
+        
     private var data = [DataCell]() {
         didSet {
             collectionView.reloadData()
         }
     }
-    
+
     weak var delegate: HomeDelegate?
     
     override func awakeFromNib() {
@@ -42,20 +39,15 @@ final class HomeTableViewCell: UITableViewCell {
         }
     }
     
-    func configData(_ data: [DataCell], type: Int) {
+    func configData(_ data: [DataCell]) {
         self.data = data
-        self.type = type
     }
 }
 
 // MARK: - UICollectionView Dalegate
 extension HomeTableViewCell: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if type == Constant.Serial.zero || type == Constant.Serial.one {
-            delegate?.changeRecipesScreen(data[indexPath.row])
-        } else {
-            delegate?.changeProductScreen(data[indexPath.row])
-        }
+        delegate?.navigateToDetailScreen(data[indexPath.row])
     }
 }
 

@@ -33,9 +33,9 @@ struct Constant {
     }
     
     struct Serial {
-        static let zero = 0
-        static let one = 1
-        static let two = 2
+        static let sectionOne = 0
+        static let sectionTwo = 1
+        static let sectionThree = 2
     }
     
     static let popularFoods = "   Popular Foods"

@@ -12,19 +12,20 @@ import Kingfisher
     
 final class DetailViewController: UIViewController, UICollectionViewDelegate {
             
-    var data: Recipe!
+    private var data: Recipe?
     
-    @IBOutlet private weak var avatarFood: UIImageView!
-    @IBOutlet private weak var summary: UITextView!
-    @IBOutlet private weak var nameFood: UILabel!
-    @IBOutlet private weak var money: UILabel!
-    @IBOutlet private weak var time: UILabel!
-    @IBOutlet private weak var score: UILabel!
-    @IBOutlet weak var button: UIButton!
+    @IBOutlet private weak var avatarFoodImage: UIImageView!
+    @IBOutlet private weak var summaryTextView: UITextView!
+    @IBOutlet private weak var nameFoodLabel: UILabel!
+    @IBOutlet private weak var moneyLabel: UILabel!
+    @IBOutlet private weak var timeLabel: UILabel!
+    @IBOutlet private weak var scoreLabel: UILabel!
+    @IBOutlet private weak var goToIngredientButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setDetail()
+        configCell()
     }
     
     @IBAction private func goToIngredient(_ sender: UIButton) {
@@ -33,7 +34,7 @@ final class DetailViewController: UIViewController, UICollectionViewDelegate {
         navigationController?.pushViewController(ingredientVC, animated: true)
     }
     
-    @IBAction private func likeBtn(_ sender: UIBarButtonItem) {
+    @IBAction private func addToFavorite(_ sender: UIBarButtonItem) {
         
     }
     
@@ -42,28 +43,19 @@ final class DetailViewController: UIViewController, UICollectionViewDelegate {
     }
     
     func setDetail() {
-        let url = URL(string: "\(data.image)")
-        nameFood.text = data.title
-        avatarFood.kf.setImage(with: url)
-        avatarFood.layer.cornerRadius = avatarFood.frame.height / 10
-        summary.text = data.summary.htmlToString
-        money.text = "$: \(data.pricePerServing)"
-        time.text = "Time: \(data.readyInMinutes)"
-        score.text = "\(data.spoonacularScore)"
-        button.layer.cornerRadius = button.frame.height / 10
+        let url = URL(string: "\(data?.image ?? "")")
+        nameFoodLabel.text = data?.title
+        avatarFoodImage.kf.setImage(with: url)
+        summaryTextView.text = data?.summary.htmlToString
+        moneyLabel.text = "$: \(data?.pricePerServing ?? 0.0)"
+        timeLabel.text = "Time: \(data?.readyInMinutes ?? 0)"
+        scoreLabel.text = "\(data?.spoonacularScore ?? 0)"
     }
-}
-
-extension String {
-    var htmlToAttributedString: NSAttributedString? {
-        guard let data = data(using: .utf8) else { return NSAttributedString() }
-        do {
-            return try NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html, .characterEncoding: String.Encoding.utf8.rawValue], documentAttributes: nil)
-        } catch {
-            return NSAttributedString()
-        }
-    }
-    var htmlToString: String {
-        return htmlToAttributedString?.string ?? ""
+    
+    func configCell() {
+        nameFoodLabel.adjustsFontSizeToFitWidth = true
+        nameFoodLabel.minimumScaleFactor = 0.2
+        avatarFoodImage.layer.cornerRadius = avatarFoodImage.frame.height / 10
+        goToIngredientButton.layer.cornerRadius = goToIngredientButton.frame.height / 10
     }
 }

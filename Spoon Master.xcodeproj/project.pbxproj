@@ -28,6 +28,7 @@
 		360264482498A4CF00BE293F /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360264472498A4CF00BE293F /* HomeHeaderView.swift */; };
 		3602644E2498AAEE00BE293F /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3602644C2498AAEE00BE293F /* HomeHeaderView.xib */; };
 		3652CDBA24969384005A8D38 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652CDB924969384005A8D38 /* BaseRequest.swift */; };
+		3657C06924A2F64B0077101F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3657C06824A2F64B0077101F /* StringExtension.swift */; };
 		366CBDA52496FF6100FB478E /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366CBDA42496FF6100FB478E /* ApiKey.swift */; };
 		366CBDA72497065300FB478E /* SearchRecipesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366CBDA62497065300FB478E /* SearchRecipesRequest.swift */; };
 		366CBDAA2497074A00FB478E /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366CBDA92497074A00FB478E /* SearchResponse.swift */; };
@@ -83,6 +84,7 @@
 		360264472498A4CF00BE293F /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		3602644C2498AAEE00BE293F /* HomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
 		3652CDB924969384005A8D38 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		3657C06824A2F64B0077101F /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		366CBDA42496FF6100FB478E /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
 		366CBDA62497065300FB478E /* SearchRecipesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipesRequest.swift; sourceTree = "<group>"; };
 		366CBDA92497074A00FB478E /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				36004EB624889613000D9E03 /* Scenes */,
 				36004EB724889643000D9E03 /* Controller */,
 				36004EB5248895F2000D9E03 /* Resources */,
+				3657C06724A2F6320077101F /* Extension */,
 				36D495ED2493184100753F85 /* Repositories */,
 				36D495F024931A5900753F85 /* Utils */,
 				36004EAD24889225000D9E03 /* Info.plist */,
@@ -272,6 +275,15 @@
 				366CBDB22497639F00FB478E /* BaseError.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		3657C06724A2F6320077101F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3657C06824A2F64B0077101F /* StringExtension.swift */,
+			);
+			name = Extension;
+			path = Repositories/Extension;
 			sourceTree = "<group>";
 		};
 		366CBDA82497073C00FB478E /* SearchResponse */ = {
@@ -578,6 +590,7 @@
 				360264482498A4CF00BE293F /* HomeHeaderView.swift in Sources */,
 				36B251F32499EF2B00271B16 /* Nutrient.swift in Sources */,
 				366CBDA72497065300FB478E /* SearchRecipesRequest.swift in Sources */,
+				3657C06924A2F64B0077101F /* StringExtension.swift in Sources */,
 				36004E9D24889223000D9E03 /* AppDelegate.swift in Sources */,
 				36004ED724889AFB000D9E03 /* ProductViewController.swift in Sources */,
 				36A8EE84248F3BEE006DEE6D /* ExtendedIngredient.swift in Sources */,
