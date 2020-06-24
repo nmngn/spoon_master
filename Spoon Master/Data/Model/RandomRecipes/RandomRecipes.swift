@@ -27,12 +27,12 @@ struct Recipe: Mappable {
     var randomId = 0
     var title = ""
     var readyInMinutes = 0
-    var sourceUrl = ""
+    var pricePerServing = 0.0
     var image = ""
     var summary = ""
     var instructions = ""
     var analyzedInstructions: [AnalyzedInstruction] = []
-    var spoonacularSourceUrl = ""
+    var spoonacularScore = 0
     
     init?(map: Map) {
         mapping(map: map)
@@ -41,11 +41,11 @@ struct Recipe: Mappable {
         randomId <- map["id"]
         title <- map["title"]
         readyInMinutes <- map["readyInMinutes"]
-        sourceUrl <- map["sourceUrl"]
+        pricePerServing <- map["pricePerServing"]
         image <- map["image"]
         summary <- map["summary"]
         instructions <- map["instructions"]
-        spoonacularSourceUrl <- map["spoonacularSourceUrl"]
+        spoonacularScore <- map["spoonacularScore"]
         extendedIngredients <- map["extendedIngredient"]
         analyzedInstructions <- map["analyzedInstruction"]
     }

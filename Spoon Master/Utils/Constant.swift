@@ -10,17 +10,33 @@ import Foundation
 import UIKit
 
 struct Constant {
-    static let numberOfRowsInSection = 1
-    static let numberOfSection = 3
-    static let categoryNumber = 3
-    static let collectionNumber = 10
+    struct Number {
+        static let numberOfRowsInSection = 1
+        static let numberOfSection = 3
+        static let categoryNumber = 3
+        static let collectionNumber = 10
+    }
     
-    static let heightOfHeaderInSection: CGFloat = 45
-    static let heightForRow: CGFloat = 205
+    struct Height {
+        static let heightOfHeaderInSection: CGFloat = 45
+        static let heightForRow: CGFloat = 205
+    }
     
-    static let homeTBVCIdentifier = "HomeTableViewCell"
-    static let homeCLTVCIdentifier = "HomeCollectionViewCell"
-    static let homeHeaderView = "HomeHeaderView"
+    struct Identifier {
+        static let homeTBVCIdentifier = "HomeTableViewCell"
+        static let homeCLTVCIdentifier = "HomeCollectionViewCell"
+        static let homeHeaderView = "HomeHeaderView"
+        static let detailCLTVCIdentifier = "DetailCollectionViewCell"
+        static let detailViewController = "DetailViewController"
+        static let productViewController = "ProductViewController"
+        static let ingredientViewController = "IngredientViewController"
+    }
+    
+    struct Serial {
+        static let zero = 0
+        static let one = 1
+        static let two = 2
+    }
     
     static let popularFoods = "   Popular Foods"
     static let popularRecipes = "   Popular Recipes"

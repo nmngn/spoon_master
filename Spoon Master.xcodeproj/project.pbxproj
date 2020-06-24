@@ -236,13 +236,13 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
-		360264462498A3F000BE293F /* HeaderCell */ = {
+		360264462498A3F000BE293F /* HomeHeaderCell */ = {
 			isa = PBXGroup;
 			children = (
 				360264472498A4CF00BE293F /* HomeHeaderView.swift */,
 				3602644C2498AAEE00BE293F /* HomeHeaderView.xib */,
 			);
-			path = HeaderCell;
+			path = HomeHeaderCell;
 			sourceTree = "<group>";
 		};
 		3652CDB72496936A005A8D38 /* API */ = {
@@ -287,8 +287,8 @@
 			isa = PBXGroup;
 			children = (
 				36004EA224889223000D9E03 /* Main.storyboard */,
-				360264462498A3F000BE293F /* HeaderCell */,
-				367798212491B87C00F812AA /* CollectionViewCell */,
+				360264462498A3F000BE293F /* HomeHeaderCell */,
+				367798212491B87C00F812AA /* HomeCollectionViewCell */,
 				367798202491B87200F812AA /* HomeTableViewCell */,
 			);
 			path = Main;
@@ -303,13 +303,13 @@
 			path = HomeTableViewCell;
 			sourceTree = "<group>";
 		};
-		367798212491B87C00F812AA /* CollectionViewCell */ = {
+		367798212491B87C00F812AA /* HomeCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				367798222491B88E00F812AA /* HomeCollectionViewCell.swift */,
 				367798232491B88E00F812AA /* HomeCollectionViewCell.xib */,
 			);
-			path = CollectionViewCell;
+			path = HomeCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		36A8EE7E248F3B86006DEE6D /* RandomRecipes */ = {

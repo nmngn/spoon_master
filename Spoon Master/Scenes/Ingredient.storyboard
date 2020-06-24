@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j3O-eu-gWT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Ingredient View Controller-->
+        <!--Ingredient-->
         <scene sceneID="OKi-sK-kEO">
             <objects>
-                <viewController id="Bwd-g2-vrm" customClass="IngredientViewController" customModule="Spoon_Master" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IngredientViewController" id="Bwd-g2-vrm" customClass="IngredientViewController" customModule="Spoon_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8cA-VL-Zan">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,8 +28,27 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yqR-Je-xLg"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Ingredient" id="K5u-zn-cts"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OxQ-wK-v3d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000.0000000000001" y="71.651785714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="crq-7g-Rea">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j3O-eu-gWT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aLt-Dk-zrr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Bwd-g2-vrm" kind="relationship" relationship="rootViewController" id="T09-aI-CEB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Esu-db-dYk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="89.855072463768124" y="71.651785714285708"/>
         </scene>
