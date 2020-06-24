@@ -17,35 +17,31 @@ enum DataCell {
 
 final class HomeCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet private weak var foodImageView: UIImageView!
-    @IBOutlet private weak var foodNameLabel: UILabel!
+    @IBOutlet private weak var avatarOfFood: UIImageView!
+    @IBOutlet private weak var nameOfFood: UILabel!
         
     override func awakeFromNib() {
         super.awakeFromNib()
-        configCell()
-    }
-    
-    func configCell() {
-        foodImageView.layer.do {
-            $0.cornerRadius = $0.frame.height / 10.0
-            $0.masksToBounds = true
-            $0.shadowColor = UIColor.black.cgColor
-            $0.shadowOpacity = 1
-            $0.shadowOffset = CGSize.zero
-            $0.shadowRadius = 10
+        avatarOfFood.do {
+            $0.layer.cornerRadius = $0.frame.height / 10.0
+            $0.layer.masksToBounds = true
+            $0.layer.shadowColor = UIColor.black.cgColor
+            $0.layer.shadowOpacity = 1
+            $0.layer.shadowOffset = CGSize.zero
+            $0.layer.shadowRadius = 10
         }
     }
     
     func configDataCell( _ data: DataCell) {
         switch data {
         case .productsCell(let item):
-            foodNameLabel.text = "   \(item.title)"
+            nameOfFood.text = "   \(item.title)"
             let url = URL(string: item.image)
-            foodImageView.kf.setImage(with: url)
+            avatarOfFood.kf.setImage(with: url)
         case .recipesCell(let recipe):
-            foodNameLabel.text = "   \(recipe.title)"
+            nameOfFood.text = "   \(recipe.title)"
             let url = URL(string: recipe.image)
-            foodImageView.kf.setImage(with: url)
+            avatarOfFood.kf.setImage(with: url)
         }
     }
 }

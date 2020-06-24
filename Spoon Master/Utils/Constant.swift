@@ -20,6 +20,7 @@ struct Constant {
     struct Height {
         static let heightOfHeaderInSection: CGFloat = 45
         static let heightForRow: CGFloat = 205
+        static let heightForIngredientRow: CGFloat = 115
     }
     
     struct Identifier {
@@ -30,6 +31,14 @@ struct Constant {
         static let detailViewController = "DetailViewController"
         static let productViewController = "ProductViewController"
         static let ingredientViewController = "IngredientViewController"
+        static let ingredientTableViewCell = "IngredientTableViewCell"
+    }
+    struct Storyboard {
+        static let detail = "Detail"
+        static let product = "Product"
+        static let ingredient = "Ingredient"
+        static let instruction = "Instruction"
+        static let favorite = "Favorite"
     }
     
     struct Serial {

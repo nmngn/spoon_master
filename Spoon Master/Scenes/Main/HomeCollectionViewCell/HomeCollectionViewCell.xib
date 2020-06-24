@@ -54,8 +54,8 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="257" height="175"/>
             <connections>
-                <outlet property="avatarOfFood" destination="0On-9r-dfn" id="EGN-D5-k2a"/>
-                <outlet property="nameOfFood" destination="HV6-jn-EZX" id="zLM-Wy-4rP"/>
+                <outlet property="foodImageView" destination="0On-9r-dfn" id="EGN-D5-k2a"/>
+                <outlet property="foodNameLabel" destination="HV6-jn-EZX" id="zLM-Wy-4rP"/>
             </connections>
             <point key="canvasLocation" x="286.23188405797106" y="138.61607142857142"/>
         </collectionViewCell>

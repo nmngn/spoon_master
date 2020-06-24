@@ -46,7 +46,7 @@ struct Recipe: Mappable {
         summary <- map["summary"]
         instructions <- map["instructions"]
         spoonacularScore <- map["spoonacularScore"]
-        extendedIngredients <- map["extendedIngredient"]
+        extendedIngredients <- map["extendedIngredients"]
         analyzedInstructions <- map["analyzedInstruction"]
     }
 }

@@ -16,4 +16,6 @@ struct URLs {
     static let product = baseUrl + "/food/products/search"
     
     static let searchRecipes = baseUrl + "/recipes/search"
+    
+    static let ingredientImage = "https://spoonacular.com/cdn/ingredients_100x100/"
 }
