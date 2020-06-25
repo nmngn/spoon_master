@@ -24,13 +24,13 @@ final class IngredientViewController: UIViewController {
     }
     
     func configView() {
+        goToInstructionButton.layer.cornerRadius = goToInstructionButton.frame.height / 10
         tableView.do {
             $0.delegate = self
             $0.dataSource = self
             $0.register(UINib(nibName: Constant.Identifier.ingredientTableViewCell, bundle: nil),
                         forCellReuseIdentifier: Constant.Identifier.ingredientTableViewCell)
         }
-        goToInstructionButton.layer.cornerRadius = goToInstructionButton.frame.height / 10
     }
     
     func takeIngredientData(_ data: Recipe) {

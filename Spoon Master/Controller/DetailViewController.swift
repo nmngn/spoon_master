@@ -34,7 +34,11 @@ final class DetailViewController: UIViewController, UICollectionViewDelegate {
             withIdentifier: Constant.Identifier.ingredientViewController) as?
             IngredientViewController {
             navigationController?.pushViewController(ingredientVC, animated: true)
-            ingredientVC.takeIngredientData(data!)
+            if data != nil {
+                ingredientVC.takeIngredientData(data!)
+            } else {
+                return
+            }
         }
     }
     

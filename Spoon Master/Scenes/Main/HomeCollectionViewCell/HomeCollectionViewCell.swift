@@ -1,8 +1,8 @@
 //
-//  CollectionViewCell.swift
+//  HomeCollectionViewCell2.swift
 //  Spoon Master
 //
-//  Created by Nam Ngây on 6/11/20.
+//  Created by Nam Ngây on 6/25/20.
 //  Copyright © 2020 Nam Ngây. All rights reserved.
 //
 
@@ -25,17 +25,6 @@ final class HomeCollectionViewCell: UICollectionViewCell {
         configCell()
     }
     
-    func configCell() {
-        foodImageView.layer.do {
-            $0.cornerRadius = $0.frame.height / 10.0
-            $0.masksToBounds = true
-            $0.shadowColor = UIColor.black.cgColor
-            $0.shadowOpacity = 1
-            $0.shadowOffset = CGSize.zero
-            $0.shadowRadius = 10
-        }
-    }
-    
     func configDataCell( _ data: DataCell) {
         switch data {
         case .productsCell(let item):
@@ -48,4 +37,12 @@ final class HomeCollectionViewCell: UICollectionViewCell {
             foodImageView.kf.setImage(with: url)
         }
     }
+    
+    func configCell() {
+         foodImageView.layer.do {
+             $0.cornerRadius = $0.frame.height / 10.0
+             $0.masksToBounds = true
+         }
+     }
+     
 }
