@@ -1,5 +1,5 @@
 //
-//  StringExtension.swift
+//  String+.swift
 //  Spoon Master
 //
 //  Created by Nam Ngây on 6/24/20.

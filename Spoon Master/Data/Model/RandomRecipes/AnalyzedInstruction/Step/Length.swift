@@ -14,6 +14,11 @@ struct Length: Mappable {
     var number = 0
     var unit = ""
     
+    init() {
+        number = 0
+        unit = ""
+    }
+    
     init?(map: Map) {
         mapping(map: map)
     }

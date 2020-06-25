@@ -26,7 +26,6 @@ final class IngredientTableViewCell: UITableViewCell {
     func takeIngredientData( _ data: ExtendedIngredient!) {
         let url = URL(string: data.imageUrl)
         ingredientImage.kf.setImage(with: url)
-        ingredientImage.layer.cornerRadius = ingredientImage.frame.height / 10
         ingreNameLabel.text = data.name
         ingreNameLabel.text?.capitalizeFirstLetter()
         if data.amount != 0 {
@@ -36,7 +35,7 @@ final class IngredientTableViewCell: UITableViewCell {
     }
     
     func configView() {
-        ingredientImage.layer.cornerRadius = ingredientImage.frame.height / 10
-        ingreAmountLabel.adjustsFontSizeToFitWidth = true
+        ingredientImage.makeRoundCorner()
+        ingreAmountLabel.wrapContent()
     }
 }

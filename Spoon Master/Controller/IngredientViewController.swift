@@ -20,7 +20,15 @@ final class IngredientViewController: UIViewController {
         super.viewDidLoad()
         configView()
     }
+    
     @IBAction func goToInstructionButton(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: Constant.Storyboard.instruction, bundle: nil)
+        if let intructionVC = storyboard.instantiateViewController(withIdentifier: Constant.Identifier.instructionViewController) as?
+            InstructionViewController,
+            let newData = data {
+            navigationController?.pushViewController(intructionVC, animated: true)
+            intructionVC.takeInstructionData(newData.analyzedInstructions)
+        }
     }
     
     func configView() {
@@ -59,7 +67,7 @@ extension IngredientViewController: UITableViewDataSource {
             IngredientTableViewCell else {
                 return UITableViewCell()
         }
-            cell.takeIngredientData(data?.extendedIngredients[indexPath.row])
+        cell.takeIngredientData(data?.extendedIngredients[indexPath.row])
         return cell
     }
 }

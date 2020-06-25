@@ -15,7 +15,7 @@ struct Step: Mappable {
     var step = ""
     var ingredients: [Ingredient] = []
     var equiments: [Equipment] = []
-    var lengths: [Length] = []
+    var length = Length()
     
     init?(map: Map) {
         mapping(map: map)
@@ -26,6 +26,6 @@ struct Step: Mappable {
         step <- map["step"]
         ingredients <- map["ingredients"]
         equiments <- map["equipment"]
-        lengths <- map["length"]
+        length <- map["length"]
     }
 }
