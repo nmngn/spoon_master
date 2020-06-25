@@ -143,7 +143,7 @@ extension HomeViewController: HomeDelegate {
     func navigateToDetailScreen(_ data: DataCell) {
         switch data {
         case .recipesCell(let value):
-            let storyboard = UIStoryboard(name: "Details", bundle: nil)
+            let storyboard = UIStoryboard(name: Constant.Storyboard.detail, bundle: nil)
             if let detailVC = storyboard.instantiateViewController(
                 withIdentifier: Constant.Identifier.detailViewController) as?
                 DetailViewController {
@@ -152,7 +152,7 @@ extension HomeViewController: HomeDelegate {
             }
 
         case .productsCell(_ ):
-            let productVC = UIStoryboard(name: "Product", bundle: nil).instantiateViewController(
+            let productVC = UIStoryboard(name: Constant.Storyboard.product, bundle: nil).instantiateViewController(
                     withIdentifier: Constant.Identifier.productViewController)
                 navigationController?.pushViewController(productVC, animated: true)
             }

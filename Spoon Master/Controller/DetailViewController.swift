@@ -29,9 +29,17 @@ final class DetailViewController: UIViewController, UICollectionViewDelegate {
     }
     
     @IBAction private func goToIngredient(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "Ingredient", bundle: nil)
-        let ingredientVC = storyboard.instantiateViewController(withIdentifier: Constant.Identifier.ingredientViewController)
-        navigationController?.pushViewController(ingredientVC, animated: true)
+        let storyboard = UIStoryboard(name: Constant.Storyboard.ingredient, bundle: nil)
+        if let ingredientVC = storyboard.instantiateViewController(
+            withIdentifier: Constant.Identifier.ingredientViewController) as?
+            IngredientViewController {
+            navigationController?.pushViewController(ingredientVC, animated: true)
+            if data != nil {
+                ingredientVC.takeIngredientData(data!)
+            } else {
+                return
+            }
+        }
     }
     
     @IBAction private func addToFavorite(_ sender: UIBarButtonItem) {

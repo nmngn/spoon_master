@@ -11,12 +11,15 @@ import ObjectMapper
 
 struct ExtendedIngredient: Mappable {
     
-    var aisle = ""
+    var unit = ""
     var extenId = 0
     var image = ""
     var name = ""
     var amount = 0
-    var unit = ""
+    var originalString = ""
+    var imageUrl: String {
+        URLs.ingredientImage + image
+    }
     
     init?(map: Map) {
         mapping(map: map)
@@ -24,10 +27,10 @@ struct ExtendedIngredient: Mappable {
     
     mutating func mapping(map: Map) {
         extenId <- map["id"]
-        aisle <- map["aisle"]
+        unit <- map["unit"]
         image <- map["image"]
         name <- map["name"]
         amount <- map["amount"]
-        unit <- map["unit"]
+        originalString <- map["originalString"]
     }
 }
