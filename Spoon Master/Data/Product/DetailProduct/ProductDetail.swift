@@ -13,15 +13,15 @@ struct ProductDetail: Mappable {
     
     var productId = 0
     var title = ""
-    var price = 0.0
+    var price = 0
     var nutritions: [Nutrition] = []
     var servingSize = ""
     var description = ""
-    var upc = ""
+    var likes = 0
     var ingredients: [IngredientP] = []
-    var ingredientCount = 0
+    var spoonacularScore = 0
     var ingredientList = ""
-    var image: [String] = []
+    var images: [String] = []
     
     init?(map: Map) {
         mapping(map: map)
@@ -34,10 +34,10 @@ struct ProductDetail: Mappable {
         nutritions <- map["nutrition"]
         servingSize <- map["serving_size"]
         description <- map["description"]
-        upc <- map["upc"]
+        likes <- map["likes"]
         ingredients <- map["ingredients"]
-        ingredientCount <- map["ingredientCount"]
+        spoonacularScore <- map["spoonacular_score"]
         ingredientList <- map["ingredientList"]
-        image <- map["image"]
+        images <- map["images"]
     }
 }

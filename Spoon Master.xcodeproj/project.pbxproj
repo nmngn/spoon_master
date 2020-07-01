@@ -29,6 +29,7 @@
 		3602644E2498AAEE00BE293F /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3602644C2498AAEE00BE293F /* HomeHeaderView.xib */; };
 		3609FD3624AC2E4B000C59E0 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3609FD3424AC2707000C59E0 /* UIView+.swift */; };
 		3609FD3824AC2EC8000C59E0 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3609FD3724AC2EC8000C59E0 /* UILabel+.swift */; };
+		3609FD4024AC3B0B000C59E0 /* SearchProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3609FD3F24AC3B0B000C59E0 /* SearchProductDetail.swift */; };
 		36192A0A24AB124E00852923 /* IngredientCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36192A0824AB124E00852923 /* IngredientCollectionViewCell.swift */; };
 		36192A0B24AB124E00852923 /* IngredientCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36192A0924AB124E00852923 /* IngredientCollectionViewCell.xib */; };
 		36192A0E24AB125D00852923 /* EquipmentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36192A0C24AB125D00852923 /* EquipmentCollectionViewCell.swift */; };
@@ -97,6 +98,7 @@
 		3602644C2498AAEE00BE293F /* HomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
 		3609FD3424AC2707000C59E0 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		3609FD3724AC2EC8000C59E0 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		3609FD3F24AC3B0B000C59E0 /* SearchProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductDetail.swift; sourceTree = "<group>"; };
 		36192A0824AB124E00852923 /* IngredientCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCollectionViewCell.swift; sourceTree = "<group>"; };
 		36192A0924AB124E00852923 /* IngredientCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IngredientCollectionViewCell.xib; sourceTree = "<group>"; };
 		36192A0C24AB125D00852923 /* EquipmentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -306,6 +308,7 @@
 				3652CDB924969384005A8D38 /* BaseRequest.swift */,
 				366CBDA62497065300FB478E /* SearchRecipesRequest.swift */,
 				36B251FE249A269E00271B16 /* SearchProductRequest.swift */,
+				3609FD3F24AC3B0B000C59E0 /* SearchProductDetail.swift */,
 			);
 			name = Request;
 			sourceTree = "<group>";
@@ -719,6 +722,7 @@
 				36192A0E24AB125D00852923 /* EquipmentCollectionViewCell.swift in Sources */,
 				36004ED524889AF4000D9E03 /* FavoriteViewController.swift in Sources */,
 				36A8EE88248F3BEE006DEE6D /* Equipment.swift in Sources */,
+				3609FD4024AC3B0B000C59E0 /* SearchProductDetail.swift in Sources */,
 				36A8EE9F248F42ED006DEE6D /* Step.swift in Sources */,
 				36004EA724889223000D9E03 /* Spoon_Master.xcdatamodeld in Sources */,
 				36F72B652495C4100057ED2B /* ErrorResponse.swift in Sources */,
