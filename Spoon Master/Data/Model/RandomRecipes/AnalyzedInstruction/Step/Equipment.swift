@@ -15,6 +15,9 @@ struct Equipment: Mappable {
     var name = ""
     var localizedName = ""
     var image = ""
+    var equipmentImage: String {
+        URLs.equipmentImage + image
+    }
     
     init?(map: Map) {
         mapping(map: map)

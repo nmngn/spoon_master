@@ -10,7 +10,6 @@ import Foundation
 import ObjectMapper
 
 struct AnalyzedInstruction: Mappable {
-    
     var name = ""
     var steps: [Step] = []
     

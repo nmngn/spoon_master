@@ -9,21 +9,22 @@
 import Foundation
 import UIKit
 
-struct Constant {
-    struct Number {
+enum Constant {
+    enum Number {
         static let numberOfRowsInSection = 1
         static let numberOfSection = 3
         static let categoryNumber = 3
         static let collectionNumber = 10
     }
     
-    struct Height {
+    enum Height {
         static let heightOfHeaderInSection: CGFloat = 45
         static let heightForRow: CGFloat = 205
-        static let heightForIngredientRow: CGFloat = 115
+        static let heightForIngredientRow: CGFloat = 130
+        static let heightForInstructionRow: CGFloat = 450
     }
     
-    struct Identifier {
+    enum Identifier {
         static let homeTBVCIdentifier = "HomeTableViewCell"
         static let homeCLTVCIdentifier = "HomeCollectionViewCell"
         static let homeHeaderView = "HomeHeaderView"
@@ -32,8 +33,14 @@ struct Constant {
         static let productViewController = "ProductViewController"
         static let ingredientViewController = "IngredientViewController"
         static let ingredientTableViewCell = "IngredientTableViewCell"
+        static let instructionViewController = "InstructionViewController"
+        static let instructionTableViewCell = "InstructionTableViewCell"
+        static let instructionHeaderFooterView = "InstructionHeaderFooterView"
+        static let ingredientCollectionViewCell = "IngredientCollectionViewCell"
+        static let equipmentCollectionViewCell = "EquipmentCollectionViewCell"
     }
-    struct Storyboard {
+    
+    enum Storyboard {
         static let detail = "Detail"
         static let product = "Product"
         static let ingredient = "Ingredient"
@@ -41,10 +48,13 @@ struct Constant {
         static let favorite = "Favorite"
     }
     
-    struct Serial {
+    enum Serial {
         static let sectionOne = 0
         static let sectionTwo = 1
         static let sectionThree = 2
+    }
+    enum Time {
+        static let timeToDismiss = 2.5
     }
     
     static let popularFoods = "   Popular Foods"

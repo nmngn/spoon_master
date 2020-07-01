@@ -21,6 +21,7 @@ final class DetailViewController: UIViewController, UICollectionViewDelegate {
     @IBOutlet private weak var timeLabel: UILabel!
     @IBOutlet private weak var scoreLabel: UILabel!
     @IBOutlet private weak var goToIngredientButton: UIButton!
+    @IBOutlet private weak var goToInstructionButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,17 +29,26 @@ final class DetailViewController: UIViewController, UICollectionViewDelegate {
         configCell()
     }
     
+    @IBAction func goToInstruction(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: Constant.Storyboard.instruction, bundle: nil)
+        if let instructionVC = storyboard.instantiateViewController(withIdentifier: Constant.Identifier.instructionViewController) as?
+            InstructionViewController,
+            let newData = data {
+            
+            navigationController?.pushViewController(instructionVC, animated: true)
+            instructionVC.takeInstructionData(newData.analyzedInstructions)
+        }
+    }
+    
     @IBAction private func goToIngredient(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: Constant.Storyboard.ingredient, bundle: nil)
         if let ingredientVC = storyboard.instantiateViewController(
             withIdentifier: Constant.Identifier.ingredientViewController) as?
-            IngredientViewController {
+            IngredientViewController,
+            let newData = data {
+            
             navigationController?.pushViewController(ingredientVC, animated: true)
-            if data != nil {
-                ingredientVC.takeIngredientData(data!)
-            } else {
-                return
-            }
+            ingredientVC.takeIngredientData(newData)
         }
     }
     
@@ -61,9 +71,10 @@ final class DetailViewController: UIViewController, UICollectionViewDelegate {
     }
     
     func configCell() {
-        nameFoodLabel.adjustsFontSizeToFitWidth = true
-        nameFoodLabel.minimumScaleFactor = 0.2
-        avatarFoodImage.layer.cornerRadius = avatarFoodImage.frame.height / 10
-        goToIngredientButton.layer.cornerRadius = goToIngredientButton.frame.height / 10
+        summaryTextView.isEditable = false
+        nameFoodLabel.wrapContent()
+        avatarFoodImage.makeRoundCorner()
+        goToIngredientButton.makeRoundCorner()
+        goToInstructionButton.makeRoundCorner()
     }
 }
