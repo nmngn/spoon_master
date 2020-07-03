@@ -40,7 +40,7 @@ final class HomeViewController: UIViewController {
                 self?.fetchRecipesData(results)
             }
         }
-        repositories.takeProductData(query: "protein", number: 10) { [weak self] (results) in
+        repositories.takeProductData(query: "milk", number: 10) { [weak self] (results) in
             DispatchQueue.main.async {
                 self?.fetchProductData(results)
             }
@@ -150,11 +150,15 @@ extension HomeViewController: HomeDelegate {
                 navigationController?.pushViewController(detailVC, animated: true)
                 detailVC.takeData(value)
             }
-
-        case .productsCell(_ ):
-            let productVC = UIStoryboard(name: Constant.Storyboard.product, bundle: nil).instantiateViewController(
-                    withIdentifier: Constant.Identifier.productViewController)
+            
+        case .productsCell(let value):
+            let storyboard = UIStoryboard(name: Constant.Storyboard.product, bundle: nil)
+            if let productVC = storyboard.instantiateViewController(
+                withIdentifier: Constant.Identifier.productViewController) as?
+                ProductViewController {
+                productVC.getData(value)
                 navigationController?.pushViewController(productVC, animated: true)
             }
+        }
     }
 }

@@ -12,6 +12,7 @@ import Alamofire
 protocol RecipesRepositoryType {
     func takeRandomRecipesData(number: Int, completion: @escaping (BaseResult<RandomRecipes>) -> Void )
     func takeProductData(query: String, number: Int, completion: @escaping (BaseResult<Product>) -> Void)
+    func takeProductDetail(productId: Int, completion: @escaping (BaseResult<ProductDetail>) -> Void)
 }
 
 struct Repositories: RecipesRepositoryType {
@@ -19,7 +20,7 @@ struct Repositories: RecipesRepositoryType {
     let api: ApiService
     
     func takeProductData(query: String, number: Int, completion: @escaping (BaseResult<Product>) -> Void) {
-        let input = SearchProductRecipes(query: query, number: number)
+        let input = SearchProductRequest(query: query, number: number)
         api.request(input: input) { (object: Product?, error) in
             if let object = object {
                 completion(.success(object))
@@ -34,6 +35,19 @@ struct Repositories: RecipesRepositoryType {
     func takeRandomRecipesData(number: Int, completion: @escaping (BaseResult<RandomRecipes>) -> Void) {
         let input = SearchRecipesRequest(number: number)
         api.request(input: input) { (object: RandomRecipes?, error) in
+            if let object = object {
+                completion(.success(object))
+            } else if let error = error {
+                completion(.failure(error: error))
+            } else {
+                completion(.failure(error: nil))
+            }
+        }
+    }
+    
+    func takeProductDetail(productId: Int, completion: @escaping (BaseResult<ProductDetail>) -> Void) {
+        let input = SearchProductDetail(productId: productId)
+        api.request(input: input) { (object: ProductDetail?, error) in
             if let object = object {
                 completion(.success(object))
             } else if let error = error {

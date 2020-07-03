@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SearchProductRecipes: BaseRequest {
+class SearchProductRequest: BaseRequest {
     
     required init(query: String, number: Int) {
         let body: [String: Any] = [
