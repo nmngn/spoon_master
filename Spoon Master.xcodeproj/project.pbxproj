@@ -70,8 +70,11 @@
 		36D495F224931A7400753F85 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D495F124931A7400753F85 /* URLs.swift */; };
 		36D495F424931A7D00753F85 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D495F324931A7D00753F85 /* Constant.swift */; };
 		36D6473B2497ECB000ACF1C9 /* BaseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D6473A2497ECB000ACF1C9 /* BaseResult.swift */; };
+		36F3D9FC24AEBF3100BB48C0 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3D9FA24AEBF3100BB48C0 /* FavoriteTableViewCell.swift */; };
+		36F3D9FD24AEBF3100BB48C0 /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36F3D9FB24AEBF3100BB48C0 /* FavoriteTableViewCell.xib */; };
 		36F72B4E2495B43C0057ED2B /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F72B4D2495B43C0057ED2B /* ApiService.swift */; };
 		36F72B652495C4100057ED2B /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F72B642495C4100057ED2B /* ErrorResponse.swift */; };
+		36FFD5FA24AEEB7500888FF0 /* GetRecipeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FFD5F924AEEB7500888FF0 /* GetRecipeInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,8 +142,11 @@
 		36D495F124931A7400753F85 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
 		36D495F324931A7D00753F85 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		36D6473A2497ECB000ACF1C9 /* BaseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResult.swift; sourceTree = "<group>"; };
+		36F3D9FA24AEBF3100BB48C0 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		36F3D9FB24AEBF3100BB48C0 /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
 		36F72B4D2495B43C0057ED2B /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		36F72B642495C4100057ED2B /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		36FFD5F924AEEB7500888FF0 /* GetRecipeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRecipeInfo.swift; sourceTree = "<group>"; };
 		5106C1DFF495C05A5E0804CB /* Pods-Spoon Master.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spoon Master.release.xcconfig"; path = "Target Support Files/Pods-Spoon Master/Pods-Spoon Master.release.xcconfig"; sourceTree = "<group>"; };
 		E5DD643DC7C7CE1EDD9AD139 /* Pods_Spoon_Master.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spoon_Master.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5E772FD21C984C5B59DC5E2 /* Pods-Spoon Master.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spoon Master.debug.xcconfig"; path = "Target Support Files/Pods-Spoon Master/Pods-Spoon Master.debug.xcconfig"; sourceTree = "<group>"; };
@@ -225,7 +231,7 @@
 				36004EAA24889225000D9E03 /* LaunchScreen.storyboard */,
 				3677981F2491B85D00F812AA /* Main */,
 				36004EE82488A5D8000D9E03 /* Detail.storyboard */,
-				36004EE02488A5B6000D9E03 /* Favorite.storyboard */,
+				36F3D9F824AEBF0D00BB48C0 /* Favorite */,
 				36004EE22488A5C0000D9E03 /* Product.storyboard */,
 				36A7386724A32C620070CBE6 /* Ingredient */,
 				366C2DA924A446A80049BDB2 /* Instruction */,
@@ -309,6 +315,7 @@
 				366CBDA62497065300FB478E /* SearchRecipesRequest.swift */,
 				36B251FE249A269E00271B16 /* SearchProductRequest.swift */,
 				3609FD3F24AC3B0B000C59E0 /* SearchProductDetail.swift */,
+				36FFD5F924AEEB7500888FF0 /* GetRecipeInfo.swift */,
 			);
 			name = Request;
 			sourceTree = "<group>";
@@ -506,6 +513,24 @@
 			name = Middleware;
 			sourceTree = "<group>";
 		};
+		36F3D9F824AEBF0D00BB48C0 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				36004EE02488A5B6000D9E03 /* Favorite.storyboard */,
+				36F3D9F924AEBF1700BB48C0 /* FavoriteTableView */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		36F3D9F924AEBF1700BB48C0 /* FavoriteTableView */ = {
+			isa = PBXGroup;
+			children = (
+				36F3D9FA24AEBF3100BB48C0 /* FavoriteTableViewCell.swift */,
+				36F3D9FB24AEBF3100BB48C0 /* FavoriteTableViewCell.xib */,
+			);
+			path = FavoriteTableView;
+			sourceTree = "<group>";
+		};
 		36F72B4C2495B4140057ED2B /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -604,6 +629,7 @@
 				36004EE32488A5C0000D9E03 /* Product.storyboard in Resources */,
 				3688317424A5B42E009171CE /* InstructionHeaderFooterView.xib in Resources */,
 				36004EE52488A5C6000D9E03 /* Ingredient.storyboard in Resources */,
+				36F3D9FD24AEBF3100BB48C0 /* FavoriteTableViewCell.xib in Resources */,
 				36004EA424889223000D9E03 /* Main.storyboard in Resources */,
 				36004EE72488A5D2000D9E03 /* Instruction.storyboard in Resources */,
 				367798252491B88E00F812AA /* HomeCollectionViewCell.xib in Resources */,
@@ -722,9 +748,11 @@
 				36192A0E24AB125D00852923 /* EquipmentCollectionViewCell.swift in Sources */,
 				36004ED524889AF4000D9E03 /* FavoriteViewController.swift in Sources */,
 				36A8EE88248F3BEE006DEE6D /* Equipment.swift in Sources */,
+				36FFD5FA24AEEB7500888FF0 /* GetRecipeInfo.swift in Sources */,
 				3609FD4024AC3B0B000C59E0 /* SearchProductDetail.swift in Sources */,
 				36A8EE9F248F42ED006DEE6D /* Step.swift in Sources */,
 				36004EA724889223000D9E03 /* Spoon_Master.xcdatamodeld in Sources */,
+				36F3D9FC24AEBF3100BB48C0 /* FavoriteTableViewCell.swift in Sources */,
 				36F72B652495C4100057ED2B /* ErrorResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

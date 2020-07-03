@@ -78,6 +78,15 @@ final class HomeViewController: UIViewController {
             print("Products has error")
         }
     }
+    
+    @IBAction func changeToFavScreen(_ sender: UIBarButtonItem) {
+        let storyboard = UIStoryboard(name: Constant.Storyboard.favorite, bundle: nil)
+        if let favoriteVC = storyboard.instantiateViewController(
+        withIdentifier: Constant.Identifier.favoriteViewController) as?
+            FavoriteViewController {
+            navigationController?.pushViewController(favoriteVC, animated: true)
+        }
+    }
 }
 
 // MARK: - UITableView Delegate
@@ -147,8 +156,8 @@ extension HomeViewController: HomeDelegate {
             if let detailVC = storyboard.instantiateViewController(
                 withIdentifier: Constant.Identifier.detailViewController) as?
                 DetailViewController {
+                detailVC.takeRecipeID(value.randomId)
                 navigationController?.pushViewController(detailVC, animated: true)
-                detailVC.takeData(value)
             }
             
         case .productsCell(let value):
