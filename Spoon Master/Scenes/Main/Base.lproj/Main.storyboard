@@ -61,7 +61,11 @@
                         <viewLayoutGuide key="safeArea" id="LSX-NQ-KqO"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="c5c-fp-6MK">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="heart.circle.fill" catalog="system" id="Cfe-sY-HaX"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="heart.circle.fill" catalog="system" id="Cfe-sY-HaX">
+                            <connections>
+                                <action selector="changeToFavScreen:" destination="BwB-eJ-zLV" id="l7O-Cd-M0o"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="WlX-QR-u3J" id="pTW-0y-0jB"/>
