@@ -105,6 +105,7 @@ final class DetailViewController: UIViewController, UICollectionViewDelegate {
     }
     
     @IBAction private func addToFavorite(_ sender: UIBarButtonItem) {
+        loadContext(data?.title ?? "")
         guard let check = checked, let recipe = data else { return }
         if check {
             saveContext(recipe)
@@ -134,7 +135,7 @@ final class DetailViewController: UIViewController, UICollectionViewDelegate {
             $0.image = recipe.image
             $0.recipeId = Int64(recipe.randomId)
         }
-      
+        
         do {
             try context?.save()
         } catch {
@@ -147,12 +148,13 @@ final class DetailViewController: UIViewController, UICollectionViewDelegate {
         let predicate = NSPredicate(format: "name == %@", title)
         request.predicate = predicate
         request.fetchLimit = 1
+        
         do {
             guard let items = try context?.fetch(request) as? [NSManagedObject] else { return }
             if items.isEmpty == false {
                 context?.delete(items[0])
-                
             }
+            
             try context?.save()
         } catch {
             print("error")
