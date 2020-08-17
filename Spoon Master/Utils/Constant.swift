@@ -21,8 +21,9 @@ enum Constant {
         static let heightOfHeaderInSection: CGFloat = 45
         static let heightForRow: CGFloat = 215
         static let heightForIngredientRow: CGFloat = 130
-        static let heightForInstructionRow: CGFloat = 450
+        static let heightForInstructionRow: CGFloat = 320
         static let heightForFavoriteRow: CGFloat = 90
+        static let estimateHeightInstruction: CGFloat = 240
     }
     
     enum Identifier {
