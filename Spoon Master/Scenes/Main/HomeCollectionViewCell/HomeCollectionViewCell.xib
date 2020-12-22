@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,6 +23,10 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2020-06-01 at 14.35.25" translatesAutoresizingMaskIntoConstraints="NO" id="0On-9r-dfn">
                                 <rect key="frame" x="0.0" y="0.0" width="255" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="255" id="4F1-pA-XnE"/>
+                                    <constraint firstAttribute="height" constant="150" id="oF8-Hd-UpZ"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Trung cuon" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HV6-jn-EZX">
                                 <rect key="frame" x="0.0" y="150" width="255" height="30"/>
@@ -32,7 +38,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="HV6-jn-EZX" firstAttribute="leading" secondItem="iUq-6B-Kn5" secondAttribute="leading" id="0iR-di-K5y"/>
                             <constraint firstItem="0On-9r-dfn" firstAttribute="trailing" secondItem="HV6-jn-EZX" secondAttribute="trailing" id="CqW-RR-tIz"/>
@@ -45,13 +51,13 @@
                     </view>
                 </subviews>
             </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstItem="iUq-6B-Kn5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="08H-y8-mJO"/>
                 <constraint firstItem="iUq-6B-Kn5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Iie-4d-qyu"/>
                 <constraint firstItem="iUq-6B-Kn5" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="ajp-nq-NhL"/>
                 <constraint firstAttribute="trailing" secondItem="iUq-6B-Kn5" secondAttribute="trailing" constant="5" id="zn4-hc-hDX"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="257" height="175"/>
             <connections>
                 <outlet property="foodImageView" destination="0On-9r-dfn" id="EGN-D5-k2a"/>
@@ -62,5 +68,8 @@
     </objects>
     <resources>
         <image name="Screen Shot 2020-06-01 at 14.35.25" width="1327" height="1326"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

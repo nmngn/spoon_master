@@ -84,7 +84,7 @@ final class DetailViewController: UIViewController, UICollectionViewDelegate {
         summaryTextView.isEditable = false
         moneyLabel.wrapContent()
         nameFoodLabel.wrapContent()
-        avatarFoodImage.makeRoundCorner()
+        avatarFoodImage.layer.cornerRadius = 8
         goToIngredientButton.makeRoundCorner()
         goToInstructionButton.makeRoundCorner()
     }

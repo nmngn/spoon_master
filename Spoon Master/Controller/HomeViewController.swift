@@ -40,7 +40,7 @@ final class HomeViewController: UIViewController {
                 self?.fetchRecipesData(results)
             }
         }
-        repositories.takeProductData(query: "milk", number: 10) { [weak self] (results) in
+        repositories.takeProductData(query: "protein", number: 10) { [weak self] (results) in
             DispatchQueue.main.async {
                 self?.fetchProductData(results)
             }
@@ -62,7 +62,7 @@ final class HomeViewController: UIViewController {
             }
             tableView.reloadData()
         case .failure:
-            print("Random Recipes has error")
+            createPopup()
         }
     }
     
@@ -75,8 +75,20 @@ final class HomeViewController: UIViewController {
             popularProducts += productData ?? []
             tableView.reloadData()
         case .failure:
-            print("Products has error")
+            createPopup()
         }
+    }
+    
+    func createPopup() {
+        let alert = UIAlertController(title: "Error", message: "Cannot connect to network", preferredStyle: .alert)
+        let OKaction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        let tryAgainAction = UIAlertAction(title: "Try Again", style: .default) { _ in
+            self.configHomeData()
+        }
+        alert.addAction(OKaction)
+        alert.addAction(tryAgainAction)
+        present(alert, animated: true, completion: nil)
+        
     }
     
     @IBAction func changeToFavScreen(_ sender: UIBarButtonItem) {
@@ -144,6 +156,7 @@ extension HomeViewController: UITableViewDataSource {
             HomeHeaderView else {
                 return UIView()
         }
+        header.contentView.backgroundColor = .white
         switch section {
         case 0:
             header.setupName(sectionTitle: Constant.popularFoods)
