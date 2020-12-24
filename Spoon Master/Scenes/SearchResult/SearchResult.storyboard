@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HNv-ZA-BNu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HNv-ZA-BNu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,8 +25,8 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wea-Bm-I9O">
-                                <rect key="frame" x="0.0" y="174" width="414" height="688"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="0.0" y="174" width="414" height="722"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="8Km-9b-JQF">
                                     <rect key="frame" x="0.0" y="99.5" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -54,12 +56,13 @@
                                 </connections>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="eRq-tm-P1P"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Wea-Bm-I9O" firstAttribute="leading" secondItem="eRq-tm-P1P" secondAttribute="leading" id="EB2-lv-KcU"/>
                             <constraint firstItem="u7M-2c-700" firstAttribute="top" secondItem="eRq-tm-P1P" secondAttribute="top" id="FSI-eN-Zw0"/>
                             <constraint firstItem="yw9-vR-AJk" firstAttribute="top" secondItem="yfj-Rh-Zrm" secondAttribute="top" id="J5s-GA-rnX"/>
-                            <constraint firstItem="Wea-Bm-I9O" firstAttribute="bottom" secondItem="eRq-tm-P1P" secondAttribute="bottom" id="OCR-Sq-av5"/>
+                            <constraint firstItem="Wea-Bm-I9O" firstAttribute="bottom" secondItem="eRq-tm-P1P" secondAttribute="bottom" constant="34" id="OCR-Sq-av5"/>
                             <constraint firstItem="Wea-Bm-I9O" firstAttribute="trailing" secondItem="eRq-tm-P1P" secondAttribute="trailing" id="Q8B-Q9-aFI"/>
                             <constraint firstItem="yw9-vR-AJk" firstAttribute="leading" secondItem="eRq-tm-P1P" secondAttribute="leading" id="Qd1-Df-ckO"/>
                             <constraint firstItem="u7M-2c-700" firstAttribute="trailing" secondItem="eRq-tm-P1P" secondAttribute="trailing" id="TZe-cV-xDV"/>
@@ -74,7 +77,6 @@
                             <constraint firstItem="sKW-qg-BwS" firstAttribute="leading" secondItem="eRq-tm-P1P" secondAttribute="leading" id="wwV-h2-tZV"/>
                             <constraint firstItem="Wea-Bm-I9O" firstAttribute="top" secondItem="sKW-qg-BwS" secondAttribute="bottom" id="y5o-nH-Vo2"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="eRq-tm-P1P"/>
                     </view>
                     <navigationItem key="navigationItem" title="Result" id="Bhx-pJ-Sky"/>
                     <connections>
@@ -109,5 +111,8 @@
     </scenes>
     <resources>
         <image name="Artboard 1" width="1125" height="2436"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

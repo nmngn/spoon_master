@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FEj-gX-YdU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FEj-gX-YdU">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,19 +24,19 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YCe-ua-UDd">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1039"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artboard 1" translatesAutoresizingMaskIntoConstraints="NO" id="meS-fR-B0Q">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                                <rect key="frame" x="0.0" y="39" width="414" height="1039"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="1000" id="Jb3-IX-cwc"/>
+                                                    <constraint firstAttribute="height" constant="1039" id="Jb3-IX-cwc"/>
                                                     <constraint firstAttribute="width" constant="414" id="QWg-zx-3B8"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KMN-s8-BES">
-                                                <rect key="frame" x="8" y="8" width="398" height="220"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="230"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="220" id="Dvh-v9-Nzj"/>
+                                                    <constraint firstAttribute="height" constant="230" id="Dvh-v9-Nzj"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtD-1F-3sc">
@@ -140,7 +140,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Oxs-je-olb">
-                                                <rect key="frame" x="19.666666666666657" y="950" width="375" height="50"/>
+                                                <rect key="frame" x="19.666666666666657" y="989" width="375" height="50"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGt-6I-Dca">
                                                         <rect key="frame" x="0.0" y="0.0" width="177.33333333333334" height="50"/>
@@ -177,7 +177,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="8mc-yb-NHP">
-                                                <rect key="frame" x="20" y="670" width="375" height="270"/>
+                                                <rect key="frame" x="20" y="709" width="375" height="270"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="Td1-yM-RHc">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
@@ -512,7 +512,7 @@
                                                 </subviews>
                                             </stackView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="327-y3-tU1">
-                                                <rect key="frame" x="33" y="402" width="348" height="260"/>
+                                                <rect key="frame" x="33" y="402" width="348" height="299"/>
                                                 <color key="textColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -520,8 +520,8 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="KMN-s8-BES" secondAttribute="trailing" constant="8" id="3Lg-zc-16I"/>
-                                            <constraint firstItem="KMN-s8-BES" firstAttribute="leading" secondItem="YCe-ua-UDd" secondAttribute="leading" constant="8" id="62s-fV-kyE"/>
+                                            <constraint firstAttribute="trailing" secondItem="KMN-s8-BES" secondAttribute="trailing" id="3Lg-zc-16I"/>
+                                            <constraint firstItem="KMN-s8-BES" firstAttribute="leading" secondItem="YCe-ua-UDd" secondAttribute="leading" id="62s-fV-kyE"/>
                                             <constraint firstItem="Oxs-je-olb" firstAttribute="centerX" secondItem="YCe-ua-UDd" secondAttribute="centerX" id="GpS-0b-h0z"/>
                                             <constraint firstItem="8mc-yb-NHP" firstAttribute="leading" secondItem="YCe-ua-UDd" secondAttribute="leading" constant="20" id="JRy-oW-UL1"/>
                                             <constraint firstItem="rtD-1F-3sc" firstAttribute="leading" secondItem="YCe-ua-UDd" secondAttribute="leading" constant="20" id="L1Z-zU-kid"/>
@@ -530,15 +530,15 @@
                                             <constraint firstAttribute="trailing" secondItem="rfg-bx-zgQ" secondAttribute="trailing" constant="19" id="PW9-O3-POO"/>
                                             <constraint firstItem="327-y3-tU1" firstAttribute="centerX" secondItem="meS-fR-B0Q" secondAttribute="centerX" id="RWb-X4-7gd"/>
                                             <constraint firstItem="327-y3-tU1" firstAttribute="top" secondItem="rfg-bx-zgQ" secondAttribute="bottom" constant="8" id="SPW-L8-ppT"/>
-                                            <constraint firstItem="KMN-s8-BES" firstAttribute="top" secondItem="YCe-ua-UDd" secondAttribute="top" constant="8" id="W7m-57-l1z"/>
-                                            <constraint firstItem="meS-fR-B0Q" firstAttribute="bottom" secondItem="Oxs-je-olb" secondAttribute="bottom" id="ZpK-ME-j7B"/>
+                                            <constraint firstItem="KMN-s8-BES" firstAttribute="top" secondItem="YCe-ua-UDd" secondAttribute="top" id="W7m-57-l1z"/>
+                                            <constraint firstItem="meS-fR-B0Q" firstAttribute="bottom" secondItem="Oxs-je-olb" secondAttribute="bottom" constant="39" id="ZpK-ME-j7B"/>
                                             <constraint firstAttribute="trailing" secondItem="rtD-1F-3sc" secondAttribute="trailing" constant="19" id="bCm-2a-uAw"/>
                                             <constraint firstAttribute="trailing" secondItem="8mc-yb-NHP" secondAttribute="trailing" constant="19" id="dL3-XC-dbJ"/>
                                             <constraint firstItem="8mc-yb-NHP" firstAttribute="top" secondItem="327-y3-tU1" secondAttribute="bottom" constant="8" id="gfO-k7-yTr"/>
                                             <constraint firstItem="rfg-bx-zgQ" firstAttribute="top" secondItem="rtD-1F-3sc" secondAttribute="bottom" constant="8" id="p4O-dT-lIs"/>
                                             <constraint firstItem="Oxs-je-olb" firstAttribute="top" secondItem="8mc-yb-NHP" secondAttribute="bottom" constant="10" id="p9d-pl-KiX"/>
                                             <constraint firstItem="rfg-bx-zgQ" firstAttribute="leading" secondItem="YCe-ua-UDd" secondAttribute="leading" constant="20" id="p9p-9I-KuN"/>
-                                            <constraint firstItem="rtD-1F-3sc" firstAttribute="top" secondItem="KMN-s8-BES" secondAttribute="bottom" constant="23" id="v6t-me-fCB"/>
+                                            <constraint firstItem="rtD-1F-3sc" firstAttribute="top" secondItem="KMN-s8-BES" secondAttribute="bottom" constant="21" id="v6t-me-fCB"/>
                                             <constraint firstAttribute="trailing" secondItem="327-y3-tU1" secondAttribute="trailing" constant="33" id="vZg-Ka-0di"/>
                                         </constraints>
                                     </view>
@@ -549,7 +549,7 @@
                                     <constraint firstItem="YCe-ua-UDd" firstAttribute="leading" secondItem="bu9-1I-H4x" secondAttribute="leading" id="R1V-jL-4xK"/>
                                     <constraint firstAttribute="bottom" secondItem="YCe-ua-UDd" secondAttribute="bottom" id="SgM-mA-aU2"/>
                                     <constraint firstItem="YCe-ua-UDd" firstAttribute="top" secondItem="bu9-1I-H4x" secondAttribute="top" id="aMh-KO-duD"/>
-                                    <constraint firstItem="YCe-ua-UDd" firstAttribute="height" secondItem="bu9-1I-H4x" secondAttribute="height" multiplier="1.29199" id="biE-bk-08Z"/>
+                                    <constraint firstItem="YCe-ua-UDd" firstAttribute="height" secondItem="bu9-1I-H4x" secondAttribute="height" multiplier="1.29199" constant="39" id="biE-bk-08Z"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -627,7 +627,7 @@
         <image name="circle-cropped (1)" width="72" height="72"/>
         <image name="circle-cropped (2)" width="75" height="75"/>
         <image name="circle-cropped (4)" width="300" height="300"/>
-        <image name="suit.heart" catalog="system" width="128" height="109"/>
+        <image name="suit.heart" catalog="system" width="32" height="32"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

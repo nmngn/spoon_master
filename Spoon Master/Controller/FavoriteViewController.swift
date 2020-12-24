@@ -35,6 +35,7 @@ final class FavoriteViewController: UIViewController {
         tableView.do {
             $0.delegate = self
             $0.dataSource = self
+            $0.tableFooterView = UIView()
             $0.register(UINib(nibName: Constant.Identifier.favoriteTableViewCell, bundle: nil),
                         forCellReuseIdentifier: Constant.Identifier.favoriteTableViewCell)
         }
