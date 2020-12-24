@@ -14,5 +14,19 @@ final class HomeHeaderView: UITableViewHeaderFooterView {
     
     func setupName(sectionTitle: String) {
         category.text = sectionTitle
+        category.layer.do {
+            $0.cornerRadius = 8
+        }
+    }
+    
+    func setupToggle(_ check: Bool) {
+        switch check {
+        case true:
+            contentView.backgroundColor = .black
+            category.backgroundColor = .black
+        default:
+            contentView.backgroundColor = .white
+            category.backgroundColor = .white
+        }
     }
 }

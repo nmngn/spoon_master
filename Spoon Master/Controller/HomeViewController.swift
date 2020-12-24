@@ -156,7 +156,11 @@ extension HomeViewController: UITableViewDataSource {
             HomeHeaderView else {
                 return UIView()
         }
-        header.contentView.backgroundColor = .white
+        if traitCollection.userInterfaceStyle == .light {
+            header.setupToggle(false)
+        } else {
+            header.setupToggle(true)
+        }
         switch section {
         case 0:
             header.setupName(sectionTitle: Constant.popularFoods)
