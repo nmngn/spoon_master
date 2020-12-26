@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         guard let _ = (scene as? UIWindowScene) else { return }
         let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
-        print(paths[0])
+        print("Core data \(paths[0])")
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
