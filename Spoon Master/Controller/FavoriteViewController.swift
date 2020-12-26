@@ -12,6 +12,8 @@ import CoreData
 final class FavoriteViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var blankImage: UIImageView!
+    @IBOutlet private weak var blankTitle: UILabel!
     
     private let context = (UIApplication.shared.delegate as? AppDelegate)?
         .persistentContainer.viewContext
@@ -32,6 +34,10 @@ final class FavoriteViewController: UIViewController {
     }
     
     func configView() {
+        tableView.isHidden = false
+        blankImage.isHidden = true
+        blankTitle.isHidden = true
+        
         tableView.do {
             $0.delegate = self
             $0.dataSource = self
@@ -47,6 +53,16 @@ final class FavoriteViewController: UIViewController {
         do {
             guard let newData = try context?.fetch(fetchRequest) as? [FavoriteRecipe] else { return }
             favRecipe = newData
+            
+            if favRecipe.isEmpty {
+                tableView.isHidden = true
+                blankImage.isHidden = false
+                blankTitle.isHidden = false
+            } else {
+                tableView.isHidden = false
+                blankImage.isHidden = true
+                blankTitle.isHidden = true
+            }
         } catch {
             print("Fetching context has error ")
         }

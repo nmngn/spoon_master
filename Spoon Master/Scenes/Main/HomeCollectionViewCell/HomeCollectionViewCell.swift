@@ -19,7 +19,8 @@ final class HomeCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet private weak var foodImageView: UIImageView!
     @IBOutlet private weak var foodNameLabel: UILabel!
-        
+    @IBOutlet private weak var view: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         configCell()
@@ -39,10 +40,16 @@ final class HomeCollectionViewCell: UICollectionViewCell {
     }
     
     func configCell() {
-         foodImageView.layer.do {
-             $0.cornerRadius = $0.frame.height / 10.0
-             $0.masksToBounds = true
-         }
-     }
+        foodImageView.layer.do {
+            $0.cornerRadius = $0.frame.height / 10.0
+            $0.masksToBounds = true
+            $0.cornerRadius = 8
+            $0.shadowColor = UIColor.black.cgColor
+            $0.shadowOpacity = 0.1
+            $0.shadowOffset = CGSize(width: 0,height: 2)
+            $0.shadowRadius = 8
+            
+        }
+    }
      
 }

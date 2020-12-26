@@ -242,6 +242,7 @@
 		36004EB624889613000D9E03 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				367D27012596E65D005F78B8 /* BlankView */,
 				36004EAA24889225000D9E03 /* LaunchScreen.storyboard */,
 				3677981F2491B85D00F812AA /* Main */,
 				36004EE82488A5D8000D9E03 /* Detail.storyboard */,
@@ -396,6 +397,13 @@
 				367798232491B88E00F812AA /* HomeCollectionViewCell.xib */,
 			);
 			path = HomeCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		367D27012596E65D005F78B8 /* BlankView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BlankView;
 			sourceTree = "<group>";
 		};
 		3688316E24A5B3B7009171CE /* InstructionHeaderFooterView */ = {

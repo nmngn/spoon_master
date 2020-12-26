@@ -35,22 +35,41 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="519-25196436_love-is-in-the-air-3-anime-hearts" id="goN-tA-PXI">
+                                <rect key="frame" x="30" y="281" width="354" height="290"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's add your favorite recipe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gv5-e2-1Y4">
+                                <rect key="frame" x="80" y="579" width="254" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="rrN-Sp-Pnd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8Ig-qw-l59"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="1D8-jt-eXA" firstAttribute="bottom" secondItem="8Ig-qw-l59" secondAttribute="bottom" constant="34" id="0oC-Vm-D4l"/>
+                            <constraint firstItem="8Ig-qw-l59" firstAttribute="trailing" secondItem="gv5-e2-1Y4" secondAttribute="trailing" constant="80" id="14k-H2-O33"/>
+                            <constraint firstAttribute="bottom" secondItem="QMc-qb-lrt" secondAttribute="bottom" id="2Br-Zf-qC3"/>
                             <constraint firstItem="1D8-jt-eXA" firstAttribute="trailing" secondItem="8Ig-qw-l59" secondAttribute="trailing" id="7o7-vb-hjg"/>
-                            <constraint firstAttribute="bottom" secondItem="QMc-qb-lrt" secondAttribute="bottom" id="IKf-Bn-sq1"/>
-                            <constraint firstItem="QMc-qb-lrt" firstAttribute="trailing" secondItem="8Ig-qw-l59" secondAttribute="trailing" id="bMa-IO-j2H"/>
-                            <constraint firstItem="QMc-qb-lrt" firstAttribute="top" secondItem="I6D-yT-xOa" secondAttribute="top" id="guD-gu-eAt"/>
+                            <constraint firstItem="QMc-qb-lrt" firstAttribute="trailing" secondItem="8Ig-qw-l59" secondAttribute="trailing" id="ZPE-X5-rli"/>
+                            <constraint firstItem="8Ig-qw-l59" firstAttribute="bottom" secondItem="gv5-e2-1Y4" secondAttribute="bottom" constant="248" id="adM-Os-C9y"/>
+                            <constraint firstItem="gv5-e2-1Y4" firstAttribute="leading" secondItem="8Ig-qw-l59" secondAttribute="leading" constant="80" id="kbB-4l-Fl6"/>
+                            <constraint firstItem="gv5-e2-1Y4" firstAttribute="top" secondItem="goN-tA-PXI" secondAttribute="bottom" constant="8" id="od3-fs-wOM"/>
                             <constraint firstItem="1D8-jt-eXA" firstAttribute="top" secondItem="8Ig-qw-l59" secondAttribute="top" id="pCc-IA-dcB"/>
-                            <constraint firstItem="QMc-qb-lrt" firstAttribute="leading" secondItem="8Ig-qw-l59" secondAttribute="leading" id="wLh-Vz-tAP"/>
+                            <constraint firstItem="QMc-qb-lrt" firstAttribute="top" secondItem="I6D-yT-xOa" secondAttribute="top" id="rdH-4b-nOq"/>
+                            <constraint firstItem="QMc-qb-lrt" firstAttribute="leading" secondItem="8Ig-qw-l59" secondAttribute="leading" id="txA-Kt-2Bm"/>
                             <constraint firstItem="1D8-jt-eXA" firstAttribute="leading" secondItem="8Ig-qw-l59" secondAttribute="leading" id="wmA-ug-4oT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Favorite" id="ylg-Fw-k9a"/>
                     <connections>
+                        <outlet property="blankImage" destination="goN-tA-PXI" id="9bn-JI-Uvr"/>
+                        <outlet property="blankTitle" destination="gv5-e2-1Y4" id="neX-EU-qTq"/>
                         <outlet property="tableView" destination="1D8-jt-eXA" id="Awz-dw-Ron"/>
                     </connections>
                 </viewController>
@@ -78,6 +97,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="519-25196436_love-is-in-the-air-3-anime-hearts" width="840" height="692"/>
         <image name="Artboard 1" width="1125" height="2436"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

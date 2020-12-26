@@ -27,7 +27,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1039"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artboard 1" translatesAutoresizingMaskIntoConstraints="NO" id="meS-fR-B0Q">
-                                                <rect key="frame" x="0.0" y="39" width="414" height="1039"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1039"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1039" id="Jb3-IX-cwc"/>
                                                     <constraint firstAttribute="width" constant="414" id="QWg-zx-3B8"/>
@@ -531,7 +531,7 @@
                                             <constraint firstItem="327-y3-tU1" firstAttribute="centerX" secondItem="meS-fR-B0Q" secondAttribute="centerX" id="RWb-X4-7gd"/>
                                             <constraint firstItem="327-y3-tU1" firstAttribute="top" secondItem="rfg-bx-zgQ" secondAttribute="bottom" constant="8" id="SPW-L8-ppT"/>
                                             <constraint firstItem="KMN-s8-BES" firstAttribute="top" secondItem="YCe-ua-UDd" secondAttribute="top" id="W7m-57-l1z"/>
-                                            <constraint firstItem="meS-fR-B0Q" firstAttribute="bottom" secondItem="Oxs-je-olb" secondAttribute="bottom" constant="39" id="ZpK-ME-j7B"/>
+                                            <constraint firstItem="meS-fR-B0Q" firstAttribute="bottom" secondItem="Oxs-je-olb" secondAttribute="bottom" id="ZpK-ME-j7B"/>
                                             <constraint firstAttribute="trailing" secondItem="rtD-1F-3sc" secondAttribute="trailing" constant="19" id="bCm-2a-uAw"/>
                                             <constraint firstAttribute="trailing" secondItem="8mc-yb-NHP" secondAttribute="trailing" constant="19" id="dL3-XC-dbJ"/>
                                             <constraint firstItem="8mc-yb-NHP" firstAttribute="top" secondItem="327-y3-tU1" secondAttribute="bottom" constant="8" id="gfO-k7-yTr"/>
@@ -627,7 +627,7 @@
         <image name="circle-cropped (1)" width="72" height="72"/>
         <image name="circle-cropped (2)" width="75" height="75"/>
         <image name="circle-cropped (4)" width="300" height="300"/>
-        <image name="suit.heart" catalog="system" width="32" height="32"/>
+        <image name="suit.heart" catalog="system" width="128" height="109"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

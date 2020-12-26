@@ -21,6 +21,7 @@ final class StepViewController: UIViewController {
     
     func configView() {
         tableView.do {
+            $0.tableFooterView = UIView()
             $0.delegate = self
             $0.dataSource = self
             $0.register(UINib(nibName: "StepTableViewCell", bundle: nil), forCellReuseIdentifier: "StepTableViewCell")

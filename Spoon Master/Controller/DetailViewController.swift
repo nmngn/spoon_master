@@ -102,7 +102,7 @@ final class DetailViewController: UIViewController, UICollectionViewDelegate {
                 data = newValue
             }
         case .failure(let error):
-            print(error ?? "")
+            print("Error at DetailVC: \(error)")
         }
     }
     
