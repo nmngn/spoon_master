@@ -33,11 +33,7 @@ final class FavoriteViewController: UIViewController {
         fetchContext()
     }
     
-    func configView() {
-        tableView.isHidden = false
-        blankImage.isHidden = true
-        blankTitle.isHidden = true
-        
+    func configView() {        
         tableView.do {
             $0.delegate = self
             $0.dataSource = self
@@ -114,7 +110,7 @@ extension FavoriteViewController: UITableViewDataSource {
             context?.delete(commit)
             favRecipe.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
-            
+            tableView.reloadData()
             do {
                 try context?.save()
             } catch {

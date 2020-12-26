@@ -62,7 +62,7 @@ enum Constant {
     }
     
     enum Time {
-        static let timeToDismiss = 2.5
+        static let timeToDismiss = 2.0
         static let timeToLoad = 1.0
     }
     

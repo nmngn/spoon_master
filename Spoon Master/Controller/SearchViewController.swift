@@ -15,6 +15,8 @@ final class SearchViewController: UIViewController, UISearchBarDelegate {
     @IBOutlet private weak var searchbar: UISearchBar!
     @IBOutlet weak var segmentControl: UISegmentedControl!
     @IBOutlet weak var activityView: UIActivityIndicatorView!
+    @IBOutlet private weak var blankSearchImage: UIImageView!
+    @IBOutlet private weak var blankTitle: UILabel!
     
     private var response: SearchResponse? {
         didSet {
@@ -47,6 +49,7 @@ final class SearchViewController: UIViewController, UISearchBarDelegate {
         searchbar.delegate = self
         activityView.isHidden = true
         tableView.do {
+            $0.isHidden = true
             $0.delegate = self
             $0.dataSource = self
             $0.register(UINib(nibName: Constant.Identifier.searchResultTableViewCell, bundle: nil),
@@ -97,8 +100,14 @@ final class SearchViewController: UIViewController, UISearchBarDelegate {
     func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool {
         if searchBar.text?.isEmpty ?? true {
             searchBar.placeholder = "Type some recipe"
+            tableView.isHidden = true
+            blankSearchImage.isHidden = false
+            blankTitle.isHidden = false
             return true
         } else {
+            tableView.isHidden = false
+            blankSearchImage.isHidden = true
+            blankTitle.isHidden = true
             return false
         }
     }

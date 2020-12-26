@@ -20,10 +20,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artboard 1" translatesAutoresizingMaskIntoConstraints="NO" id="yw9-vR-AJk">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="u7M-2c-700">
-                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wea-Bm-I9O">
                                 <rect key="frame" x="0.0" y="174" width="414" height="722"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -42,6 +38,23 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's search your recipe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cy8-3s-iaT">
+                                <rect key="frame" x="80" y="581" width="254" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="oyg-N5-9Na"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="585e4ae1cb11b227491c3393" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1F6-AX-WuZ">
+                                <rect key="frame" x="30" y="283" width="354" height="290"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
+                            </imageView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="u7M-2c-700">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sKW-qg-BwS">
                                 <rect key="frame" x="0.0" y="144" width="414" height="31"/>
                                 <constraints>
@@ -59,28 +72,37 @@
                         <viewLayoutGuide key="safeArea" id="eRq-tm-P1P"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="cy8-3s-iaT" firstAttribute="leading" secondItem="eRq-tm-P1P" secondAttribute="leading" constant="80" id="BSF-wC-cIU"/>
                             <constraint firstItem="Wea-Bm-I9O" firstAttribute="leading" secondItem="eRq-tm-P1P" secondAttribute="leading" id="EB2-lv-KcU"/>
                             <constraint firstItem="u7M-2c-700" firstAttribute="top" secondItem="eRq-tm-P1P" secondAttribute="top" id="FSI-eN-Zw0"/>
                             <constraint firstItem="yw9-vR-AJk" firstAttribute="top" secondItem="yfj-Rh-Zrm" secondAttribute="top" id="J5s-GA-rnX"/>
+                            <constraint firstItem="eRq-tm-P1P" firstAttribute="trailing" secondItem="1F6-AX-WuZ" secondAttribute="trailing" constant="30" id="Nl4-cv-iM5"/>
                             <constraint firstItem="Wea-Bm-I9O" firstAttribute="bottom" secondItem="eRq-tm-P1P" secondAttribute="bottom" constant="34" id="OCR-Sq-av5"/>
                             <constraint firstItem="Wea-Bm-I9O" firstAttribute="trailing" secondItem="eRq-tm-P1P" secondAttribute="trailing" id="Q8B-Q9-aFI"/>
                             <constraint firstItem="yw9-vR-AJk" firstAttribute="leading" secondItem="eRq-tm-P1P" secondAttribute="leading" id="Qd1-Df-ckO"/>
                             <constraint firstItem="u7M-2c-700" firstAttribute="trailing" secondItem="eRq-tm-P1P" secondAttribute="trailing" id="TZe-cV-xDV"/>
+                            <constraint firstItem="1F6-AX-WuZ" firstAttribute="top" secondItem="sKW-qg-BwS" secondAttribute="bottom" constant="109" id="WjT-Rs-qxG"/>
                             <constraint firstItem="yw9-vR-AJk" firstAttribute="trailing" secondItem="eRq-tm-P1P" secondAttribute="trailing" id="bSm-78-lUH"/>
+                            <constraint firstItem="1F6-AX-WuZ" firstAttribute="leading" secondItem="eRq-tm-P1P" secondAttribute="leading" constant="30" id="fVW-zs-5ct"/>
                             <constraint firstAttribute="bottom" secondItem="yw9-vR-AJk" secondAttribute="bottom" id="gHD-iB-FSe"/>
                             <constraint firstItem="sKW-qg-BwS" firstAttribute="trailing" secondItem="eRq-tm-P1P" secondAttribute="trailing" id="iQY-Zq-fd8"/>
+                            <constraint firstItem="eRq-tm-P1P" firstAttribute="trailing" secondItem="cy8-3s-iaT" secondAttribute="trailing" constant="80" id="ju9-iN-YjB"/>
                             <constraint firstItem="sKW-qg-BwS" firstAttribute="trailing" secondItem="eRq-tm-P1P" secondAttribute="trailing" id="nMw-4Q-Ddk"/>
                             <constraint firstItem="u7M-2c-700" firstAttribute="leading" secondItem="eRq-tm-P1P" secondAttribute="leading" id="pAU-96-pDb"/>
                             <constraint firstItem="sKW-qg-BwS" firstAttribute="leading" secondItem="eRq-tm-P1P" secondAttribute="leading" id="rHD-Ct-CLx"/>
                             <constraint firstItem="sKW-qg-BwS" firstAttribute="top" secondItem="u7M-2c-700" secondAttribute="bottom" id="sSJ-PK-duo"/>
+                            <constraint firstItem="cy8-3s-iaT" firstAttribute="top" secondItem="1F6-AX-WuZ" secondAttribute="bottom" constant="8" symbolic="YES" id="tw0-ft-Zij"/>
                             <constraint firstItem="sKW-qg-BwS" firstAttribute="top" secondItem="u7M-2c-700" secondAttribute="bottom" id="wjY-7i-Vfh"/>
                             <constraint firstItem="sKW-qg-BwS" firstAttribute="leading" secondItem="eRq-tm-P1P" secondAttribute="leading" id="wwV-h2-tZV"/>
+                            <constraint firstItem="eRq-tm-P1P" firstAttribute="bottom" secondItem="cy8-3s-iaT" secondAttribute="bottom" constant="246" id="xy8-37-acQ"/>
                             <constraint firstItem="Wea-Bm-I9O" firstAttribute="top" secondItem="sKW-qg-BwS" secondAttribute="bottom" id="y5o-nH-Vo2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Result" id="Bhx-pJ-Sky"/>
                     <connections>
                         <outlet property="activityView" destination="8Km-9b-JQF" id="Vwf-x7-lsP"/>
+                        <outlet property="blankSearchImage" destination="1F6-AX-WuZ" id="ATY-D2-iQM"/>
+                        <outlet property="blankTitle" destination="cy8-3s-iaT" id="ict-Yx-eyx"/>
                         <outlet property="searchbar" destination="u7M-2c-700" id="Rae-aS-K1j"/>
                         <outlet property="segmentControl" destination="sKW-qg-BwS" id="LaO-g5-go0"/>
                         <outlet property="tableView" destination="Wea-Bm-I9O" id="S61-bP-5oi"/>
@@ -110,6 +132,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="585e4ae1cb11b227491c3393" width="2064" height="2011"/>
         <image name="Artboard 1" width="1125" height="2436"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
